@@ -49,41 +49,79 @@
         <h3>November 18 2022</h3>
         <div class = PicCarousel>
 
-            <div class = BMY1>
+            <div class = BMY>
             <div class = numbertext>1/6</div>
             <img src = "photos/BMY1.jpg"  width="260" height="205">
             <div class = caption>The Vietnamese Table Group Picture!</div>
              </div>
 
-            <div class = BMY2>
+            <div class = BMY>
             <div class = numbertext>2/6</div>
             <img src = "photos/BMY2.jpeg"  width="260" height="205">
             <div class = caption>Salesmen of the Philippines Table!</div>
             </div>
 
-            <div class = BMY3>
+            <div class = BMY>
             <div class = numbertext>3/6</div>
             <img src = "photos/BMY3.jpg" width ="290" height="205">
             <div class = caption>Henna art being done by the Middle East Table.</div>
              </div>
 
-            <div class = BMY4>
+            <div class = BMY>
             <div class = numbertext>4/6</div>
             <img src = "photos/BMY4.jpg"  width="290" height="205">
             <div class = caption>Ending dance move of the Vietnamese Table's Performance.</div>
             </div>
 
-            <div class = BMY5>
+            <div class = BMY>
             <div class = numbertext>5/6</div>
             <img src = "photos/BMY5.jpg"  width="310" height="205">
             <div class = caption>Indian Table doing their performance.</div>
             </div>
 
-            <div class = BMY6>
+            <div class = BMY>
             <div class = numbertext>6/6</div>
             <img src = "photos/BMY6.jpg"  width="290" height="205">
             <div class = caption>The Middle East Table doing a dfadsfajskd</div>
             </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+
+    </div>
+
+<script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n){
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+ function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("BMY");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+    </script> 
+
+    
+</div>
     
     <body>Sequeling the Cultural Bakesale earlier this year, we threw a multicultural showcase to celebrate the diversity of BASIS Tucson North. Nine regions of the biggest communities in the school hosted food stands and threw outstanding performances! Click the title to checkout individual details of each regions and to watch the performances. </body>
     
@@ -133,6 +171,7 @@
             <img src = "photos/bakesale8.jpg" width="300" height="205">
             <div class = caption>Students visting different tables to try their foods.</div>
         <body>To end the 2021-22 school year, we threw a bakesale to acknowledge the racial and ethnic diversity of BASIS Tucson North. Seven regions were represented: Africa, Philippines, China, India, Vietnam, Middle East, and Latin America. They all held beautiful stands with delicious foods! All profit made went towards the Annual Teacher Fund. </body>
+    </div>
     </div>
     <div class="mentalHealth">
         <h2>Importance of Mental Health Speaker Event</h2>
