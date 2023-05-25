@@ -42,9 +42,7 @@
             <img src = "photos/MLKPics3.jpg"  width="260" height="205">
             <div class = caption>Anthony, Harini, and Christopher holding up the Students For Unity banner!</div>
         </div>
-        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-
+        
         </div>
         <body>We teamed up with the NAACP and represented our community in the MLK Day parade!</body>
     </div>
@@ -88,8 +86,6 @@
             <img src = "photos/BMY6.jpg"  width="290" height="205">
             <div class = caption>The Middle East Table doing Dabke.</div>
             </div>
-            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
         
 
     </div>
@@ -117,8 +113,7 @@
             <img src = "photos/makeachange3.jpg" width="260" height="205">
             <div class = caption>Sydney, Christopher, and Sanobar joining a picture with Joyeuse before the finish picking up any waste remains.</div>
         </div> 
-            <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+
         </div>
         <body>We teamed up with the Make A Change club of BASIS Tucson North to do a campus-wide cleanup! We had a lot of fun with the Make A Change Club in the process!</body>
     </div>
@@ -176,8 +171,7 @@
        
         </div>
         
-        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+    
     </div>
     <body>To end the 2021-22 school year, we threw a bakesale to acknowledge the racial and ethnic diversity of BASIS Tucson North. Seven regions were represented: Africa, Philippines, China, India, Vietnam, Middle East, and Latin America. They all held beautiful stands with delicious foods! All profit made went towards the Annual Teacher Fund. </body>
     </div>
@@ -225,39 +219,12 @@
             <img src = "photos/ddlm2.jpg" width="260" height="205">
             <div class = caption>Students For Unity group picture!</div>
         </div>
-        <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+
         </div>
         <body>
             We held an event during the BASIS Halloween dance celebrating the Mexican holiday Días De Los Muertos, or Day of the Dead. The Lower Schoolers enjoyed the snacks, and we had a lot of fun in the process!
         </body>
     </div>
-
-    <script>
-        let slideIndex = [1,1,1,1,1];
-        let slideId = ["MLKpics", "BMY", "MCC", "bakesale1", "ddlm1"]
-        showSlides(1, 0);
-        showSlides(1, 1);
-        showSlides(1, 2);
-        showSlides(1, 3);
-        showSlides(1, 4);
-
-        
-        function plusSlides(n, no) {
-          showSlides(slideIndex[no] += n, no);
-        }
-        
-        function showSlides(n, no) {
-          let i;
-          let x = document.getElementsByClassName(slideId[no]);
-          if (n > x.length) {slideIndex[no] = 1}    
-          if (n < 1) {slideIndex[no] = x.length}
-          for (i = 0; i < x.length; i++) {
-             x[i].style.display = "none";  
-          }
-          x[slideIndex[no]-1].style.display = "block";  
-        }
-        </script>
     </body>
 
 </html>
