@@ -21,33 +21,37 @@
             <div class = caption></div>
         </div>
     </div>-->
+    <body>
     <h3>2022-23 Year</h3>
     <div class="MLK">
         <h2>MLK March</h2>
         <h3>January 16 2023</h3>
-        <div class = PicCarousel>
-        <div class = "MLKpics1">
+        <div class = PicCarouselMLK>
+        <div class = "MLKpics">
             <div class = numbertext>1/3</div>
             <img src = "photos/MLKPics1.jpg" width="260" height="205">
             <div class = caption>Joyeuse, Blessy, Ibrahim, Anthony, and Christopher representing Students for Unity!</div>
         </div>
-        <div class = "MLKpics2">
+        <div class = "MLKpics">
             <div class = numbertext>2/3</div>
             <img src = "photos/MLKPics2.jpg"  width="260" height="205">
             <div class = caption>Group Selfie!</div>
         </div>
-        <div class = "MLKpics3">
+        <div class = "MLKpics">
             <div class = numbertext>3/3</div>
             <img src = "photos/MLKPics3.jpg"  width="260" height="205">
             <div class = caption>Anthony, Harini, and Christopher holding up the Students For Unity banner!</div>
         </div>
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
         </div>
         <body>We teamed up with the NAACP and represented our community in the MLK Day parade!</body>
     </div>
     <div class="BMY22">
         <h2><a href=sfuBMY22.html>BASIS Meet Yourself 2022</a></h2>
         <h3>November 18 2022</h3>
-        <div class = PicCarousel>
+        <div class = PicCarouselBMY22>
 
             <div class = BMY>
             <div class = numbertext>1/6</div>
@@ -84,43 +88,12 @@
             <img src = "photos/BMY6.jpg"  width="290" height="205">
             <div class = caption>The Middle East Table doing a dfadsfajskd</div>
             </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
         
 
     </div>
-
-<script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n){
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
- function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("BMY");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-
-    </script> 
-
-    
+ 
 </div>
     
     <body>Sequeling the Cultural Bakesale earlier this year, we threw a multicultural showcase to celebrate the diversity of BASIS Tucson North. Nine regions of the biggest communities in the school hosted food stands and threw outstanding performances! Click the title to checkout individual details of each regions and to watch the performances. </body>
@@ -129,15 +102,23 @@
         <h2>Make a Change Cleanup</h2>
         <h3>November 3 2022</h3>
         <div class = PicCarousel>
+            <div class = "MCC"> 
             <div class = numbertext>1/3</div>
             <img src = "photos/makeachange1.jpg"  width="260" height="205">
             <div class = caption>Iman, Sydney, Christopher, and Sanobar posing for a picture before finishing the bush trimming.</div>
+        </div>
+            <div class = "MCC"> 
             <div class = numbertext>2/3</div>
             <img src = "photos/makeachange2.jpg"  width="260" height="205">
             <div class = caption>A newly cleaned campus!</div>
+        </div>
+            <div class = "MCC"> 
             <div class = numbertext>3/3</div>
             <img src = "photos/makeachange3.jpg" width="260" height="205">
             <div class = caption>Sydney, Christopher, and Sanobar joining a picture with Joyeuse before the finish picking up any waste remains.</div>
+        </div> 
+            <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
         </div>
         <body>We teamed up with the Make A Change club of BASIS Tucson North to do a campus-wide cleanup! We had a lot of fun with the Make A Change Club in the process!</body>
     </div>
@@ -146,32 +127,59 @@
         <h2>Cultural Bakesale 2022</h2>
         <h3>May 24 2022</h3>
         <div class = PicCarousel>
+            <div class = "bakesale1">
             <div class = numbertext>1/8</div>
             <img src = "photos/bakesale1.jpg" width="300" height="205">
             <div class = caption>The Philippines table represented by Mary Bless, Blessy, Therese, Emily, Athena, and Kiera!</div>
+        </div>
+
+            <div class = "bakesale1">
             <div class = numbertext>2/8</div>
             <img src = "photos/bakesale2.jpg" width="300" height="205">
             <div class = caption>Hayden representing the Middle East Table!</div>
+        </div>
+
+            <div class = "bakesale1">
             <div class = numbertext>3/8</div>
             <img src = "photos/bakesale3.jpg" width="300" height="205">
             <div class = caption>The India Table being represented by Harini, Krithika, Nitish, and Pranav!</div>
+        </div>
+
+            <div class = "bakesale1">
             <div class = numbertext>4/8</div>
             <img src = "photos/bakesale4.jpg" width="300" height="205">
             <div class = caption>Alessandra, Dezstany, and Andrea representing the Latin America Table!</div>
+        </div>
+
+            <div class = "bakesale1">
             <div class = numbertext>5/8</div>
             <img src = "photos/bakesale5.jpg" width="300" height="205">
             <div class = caption>The Vietnam Table being represented by Jenny, Emily, Emma, Mindy, and Timothy!</div>
+        </div>
+
+            <div class = "bakesale1">
             <div class = numbertext>6/8</div>
             <img src = "photos/bakesale6.jpg" width="300" height="205">
             <div class = caption>David, Wenli, Albert, Patrick, Sophie, Melissa, and Andrew representing the China Table!</div>
+        </div>
+
+            <div class = "bakesale1">
             <div class = numbertext>7/8</div>
             <img src = "photos/bakesale7.jpg" width="300" height="205">
             <div class = caption>The Africa Table being represented by Aliyah, Ibrahim, Niyat, and Anthony!</div>
+        </div>
+
+            <div class = "bakesale1">
             <div class = numbertext>8/8</div>
             <img src = "photos/bakesale8.jpg" width="300" height="205">
             <div class = caption>Students visting different tables to try their foods.</div>
-        <body>To end the 2021-22 school year, we threw a bakesale to acknowledge the racial and ethnic diversity of BASIS Tucson North. Seven regions were represented: Africa, Philippines, China, India, Vietnam, Middle East, and Latin America. They all held beautiful stands with delicious foods! All profit made went towards the Annual Teacher Fund. </body>
+       
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
     </div>
+    <body>To end the 2021-22 school year, we threw a bakesale to acknowledge the racial and ethnic diversity of BASIS Tucson North. Seven regions were represented: Africa, Philippines, China, India, Vietnam, Middle East, and Latin America. They all held beautiful stands with delicious foods! All profit made went towards the Annual Teacher Fund. </body>
     </div>
     <div class="mentalHealth">
         <h2>Importance of Mental Health Speaker Event</h2>
@@ -218,17 +226,51 @@
         <h2>Dias De Los Muertos Bake Sale</h2>
         <h3>October 29 2021</h3>
         <div class = PicCarousel>
+            <div class = ddlm1>
             <div class = numbertext>1/2</div>
             <img src = "photos/ddlm1.jpg" width="260" height="205">
             <div class = caption>Students setting up for the bakesale table.</div>
+        </div>
+        <div class = ddlm1>
             <div class = numbertext>2/2</div>
             <img src = "photos/ddlm2.jpg" width="260" height="205">
             <div class = caption>Students For Unity group picture!</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
         </div>
         <body>
             We held an event during the BASIS Halloween dance celebrating the Mexican holiday Días De Los Muertos, or Day of the Dead. The Lower Schoolers enjoyed the snacks, and we had a lot of fun in the process!
         </body>
     </div>
+
+    <script>
+        let slideIndex = [1,1,1,1,1];
+        let slideId = ["MLKpics", "BMY", "MCC", "bakesale1", "ddlm1"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        showSlides(1, 2);
+        showSlides(1, 3);
+        showSlides(1, 4);
+
+        
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+          let i;
+          let x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        </script>
+    </body>
+
 </html>
 <!--
     MLK march
