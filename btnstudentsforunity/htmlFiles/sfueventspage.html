@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <nav>
-    <input type="checkbox" id="checkbox_toggle" />
-    <ul class = "navBAr" >
-        <li><a href="sfuhomepage.html">Home</a></li>
-        <li><a href="sfueventspage.html">Events</a></li>
-        <li><a href="sfumeetingspage.html">Meetings</a></li>
-        <li><a href="sfucontactus.html">Contact Us</a></li>
-        <li><a href ="sfuaboutus.html">About Us</a></li>
-    </ul>
+    <div class="topnav">
+        <a href="sfuhomepage.html">Home</a>
+        <a href="sfumeetingspage.html">Meetings</a>
+        <a href ="sfueventspage.html">Events</a>
+        <a href="sfucontactus.html">Contact</a>
+        <div class = "aboutSFU">
+            <button class = "aboutSFUU">About Us</button>
+            <div class = dropdownAboutUs>
+            <a href = "sfuleadership.html">Leadership</a>
+        </div>
+        </div>
+        
+      </div>
 </nav>
 <html>
     <head><title>Students For Unity Events</title></head>
@@ -225,6 +230,32 @@
             We held an event during the BASIS Halloween dance celebrating the Mexican holiday Días De Los Muertos, or Day of the Dead. The Lower Schoolers enjoyed the snacks, and we had a lot of fun in the process!
         </body>
     </div>
+
+    <script>
+        let slideIndex = [1,1,1,1,1];
+        let slideId = ["MLKpics", "BMY", "MCC", "bakesale1", "ddlm1"]
+        showSlides(1, 0); 
+        showSlides(1, 1);
+        showSlides(1, 2);
+        showSlides(1, 3);
+        showSlides(1, 4);
+
+        
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+          let i;
+          let x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        </script>
     </body>
 
 </html>

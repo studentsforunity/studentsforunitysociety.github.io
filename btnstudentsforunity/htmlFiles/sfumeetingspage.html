@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <nav>
-    <input type="checkbox" id="checkbox_toggle" />
-    <ul class = "navBAr" >
-        <li><a href="sfuhomepage.html">Home</a></li>
-        <li><a href="sfueventspage.html">Events</a></li>
-        <li><a href="sfumeetingspage.html">Meetings</a></li>
-        <li><a href="sfucontactus.html">Contact Us</a></li>
-        <li><a href ="sfuaboutus.html">About Us</a></li>
-    </ul>
+    <div class="topnav">
+        <a href="sfuhomepage.html">Home</a>
+        <a href="sfumeetingspage.html">Meetings</a>
+        <a href ="sfueventspage.html">Events</a>
+        <a href="sfucontactus.html">Contact</a>
+        <div class = "aboutSFU">
+            <button class = "aboutSFUU">About Us</button>
+            <div class = dropdownAboutUs>
+            <a href = "sfuleadership.html">Leadership</a>
+        </div>
+        </div>
+        
+      </div>
 </nav>
 <html>
     <head><title>Students For Unity Meetings</title></head>
@@ -24,6 +29,7 @@
     <h3>meeting date</h3>
     <h4>Title of Meeting</h4>
     <body>desc. of meeting and photography credits</body></div>-->
+    <body>
 <div article = endOftheYear>
     <h3>April 28 2023</h3>
     <h4>End Of The Year Potluck!</h4>
@@ -56,8 +62,10 @@
         <div class = numbertext>5/5</div>
         <video src = "videos/endOftheYear5.MOV" controls width="250" height="200"></video>
         <div class = caption>Ibrahim singing ばかみたい</div>
-    </div>
 
+    </div>
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
     </div>
     <body>
         This was our last meeting of the 2022-23 year! Along with holding a potluck of eegees, chips, and various Asian snacks, we had fun with some karaoke! Thank you to everyone for the amazing year! 
@@ -77,17 +85,17 @@
     <h3>April 6 2023</h3>
     <h4>Asian American Identity Discussion</h4>
     <div class = PicCarousel>
-        <div class = numbertext></div>
+        <div class = numbertext>1/1</div>
         <img src = "photos/asianAmericanidentity1.jpeg" width="250" height="200">
         <div class = caption>Kawsa explains her personal experiences in school as an Asian-American.</div>
     </div>
-    <body>Chirstopher holds an open discussion about Asian American experiences??</body>
+    <body>Chirstopher holds an open discussion about Asian American experiences and how it has an effect on our daily lives as well as our school life.</body>
 </div>
 <div article = transRights>
     <h3>March 31 2023</h3>
     <h4>Trans Identity and Rights Discussion</h4>
     <div class = PicCarousel>
-        <div class = numbertext></div>
+        <div class = numbertext>1/1</div>
         <img src = "photos/transRight1.jpeg" width="250" height="200">
         <div class = caption>Ibrahim expressing his thoughts on the current issue of Trans Rights in the US.</div>
     </div>
@@ -97,7 +105,7 @@
     <h3>March 24 2023</h3>
     <h4>History of the Pride Flag</h4>
     <div class = PicCarousel>
-        <div class = numbertext></div>
+        <div class = numbertext>1/1</div>
         <img src = "photos/prideFlag1.jpg" width="250" height="200">
         <div class = caption>Our students are carefully listening to our presenters as they give some background.</div>
     </div>
@@ -119,11 +127,11 @@
     </div>
     <body>We ended our women's rights unit by holding an open discussion focusing on the systemic causes and methods to close the gender gap in STEM. </body>
 </div>
-<div article = Lorde>
+<div article = planningDay>
     <h3>February 17 2023</h3>
-    <h4>Audre Lorde Poetry Discussion</h4>
+    <h4>Planning Day!</h4>
     <body>no pictures available</body>
-    <body>desc. of meeting and photography credits</body>
+    <body>We also dedicate some meetings to talk about our future plans and the club's direction! This day was one of them!</body>
 </div>
 <div article = interFem>
     <h3>February 10 2023</h3>
@@ -143,7 +151,10 @@
         <div class = numbertext>3/3</div>
         <img src = "photos/interfem4.jpeg"  width="250" height="200">
         <div class = caption>Meeting Notes pt.2</div>
+
     </div>
+    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
     </div>
     <body>Naomi and Therese hold an open dicussion focusing on the antagonization and commercialization of feminism along with minority representation in feminism.</body>
 </div>
@@ -151,7 +162,7 @@
     <h3>February 3 2023</h3>
     <h4>Majority VS Minority Discussion</h4>
     <div class = PicCarousel>
-        <div class = numbertext></div>
+        <div class = numbertext>1/1</div>
         <img src = "photos/majvsmin1.jpeg" width="250" height="200">
         <div class = caption>Dr. Shroff giving his lecture.</div>
     </div>
@@ -161,9 +172,9 @@
     <h3>January 27 2023</h3>
     <h4>Monterey and Half Moon Bay Mass Shootings Discussion</h4>
     <div class = PicCarousel>
-        <div class = numbertext></div>
+        <div class = numbertext>1/1</div>
         <img src = "photos/MonHBshootings1.jpeg"  width="250" height="200">
-        <div class = caption></div>
+        <div class = caption>Christopher telling his friend's experiences to the group.</div>
     </div>
     <body>In light of the Chinese New Year shootings, Christopher spoke about his friend's experiences during that time along with holding an open discussion on gun control and how to avoid tragedies like this.</body>
 </div>
@@ -173,7 +184,7 @@
     <div class = womensrights>
         <div class = numbertext>1/1</div>
         <img src = "photos/WomenRights1.jpg"  width="250" height="200">
-        <div class = caption></div>
+        <div class = caption>Students listening to what Ibrahim has to say.</div>
     </div>
     <body>Daniel and Therese held an open discussion about the meaning of feminism and the importance of women's education regarding the Taliban restricting Afghani Girls from receiving education.</body>
 </div>
@@ -199,10 +210,10 @@
 <div article = BSUintro>
     <h3>October 7 2022</h3>
     <h4>Ongoing issues in the Black American Community and Introduction of BSU</h4>
-    <div class= BSUimg>
+    <div class= PicCarousel>
 
         <!-- Full-width images with number and caption text -->
-        <div class= BSU>
+        <div class = "BSU">
           <div class= numbertextBSU >1 / 2</div>
           <img src="photos/BSUintro1.jpg" width="250" height="200" >
           <div class= captionBSU>BSU Group Picture!</div>
@@ -212,32 +223,41 @@
           <div class="numbertext">2 / 2</div>
           <img src="photos/BSUintro2.jpg" width="250" height="200">
           <div class= captionBSUtalk>Students raise their hand while talking about ongoing issues in the Black American Community</div>
+
         </div>
-    <body>Joyeuse held an open discussion regarding ongoing issues in the Black American Community especially with wealth disparities and conflict between African Americans who were a byproduct of slavery and those who had parents/grandparents immigrate. We also welcomed the Black Student Union!</body>
+    <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
 </div>
+<body>Joyeuse held an open discussion regarding ongoing issues in the Black American Community especially with wealth disparities and conflict between African Americans who were a byproduct of slavery and those who had parents/grandparents immigrate. We also welcomed the Black Student Union!</body>
 <div article = clubDiverse>
     <h3>September 30 2022</h3>
-    <h4>How does our backgrounds affect our lives and values?</h4>
-    <div class = PicCarousel>
-        <div class = numbertext></div>
-        <!--img src-->
-        <div class = caption></div>
-    </div>
-    <body>desc. of meeting</body>
+    <h4>How do our backgrounds affect our lives and values?</h4>
+    <body><p>no available pictures</p></body>
+    <body>Christopher and Ibrahim held an open discussion allowing students to recount how the way they were raised affected the person they are today along with comparing their lifestyles with their peers.</body>
 </div>
 <div article = iran>
     <h3>September 23 2022</h3>
     <h4>Hijab Protests in Iran</h4>
     <div class = PicCarousel>
+        <div class = "irann">
         <div class = numbertext>1/3</div>
         <img src = "photos/iran1.jpeg" width="250" height="200">
-        <div class = caption></div>">
+        <div class = caption></div>
+    </div>
+        <div class = "irann">
         <div class = numbertext>2/3</div>
         <img src = "photos/iran2.jpeg" width="250" height="200">
-        <div class = caption></div>">
+        <div class = caption></div>
+    </div>
+        <div class = "irann">
         <div class = numbertext>3/3</div>
         <img src = "photos/iran3.jpeg" width="250" height="200">
-        <div class = caption></div>">
+        <div class = caption></div>
+
+
+    </div>
+    <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
     </div>
     <body>We discuss the recent Iranian protests over government censorship and the forced use of the Hijab.</body>
 </div>
@@ -245,15 +265,25 @@
     <h3>September 16 2022</h3>
     <h4>Is BASIS Diverse?</h4>
     <div class = PicCarousel>
+        <div class = "basisdiv">
         <div class = numbertext>1/3</div>
         <img src = "photos/BASISDIversity1.jpeg" width="250" height="200">
         <div class = caption>Students raise their hand to express their thoughts.</div>
+    </div>
+
+        <div class = "basisdiv">
         <div class = numbertext>2/3</div>
         <img src = "photos/BASISDiversity2.jpeg" width="250" height="200">
         <div class = caption>Our old website link and the question of our meeting.</div>
+    </div>
+
+        <div class = "basisdiv">
         <div class = numbertext>3/3</div>
         <img src = "photos/BASISDiversity3.jpeg" width="250" height="200">
         <div class = caption>The 2022-23 Leadership, Christopher A and Ibrahim B!</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
     </div>
     <body>First meeting of the 2022-23 year! We held an open discussion based on the question "Is BASIS Diverse?". Students talked about the differing levels of ethnic, racial, ideological, sexuality, and socioeconomic diversity in the school.</body>
 </div>
@@ -270,14 +300,35 @@
 <div article = ClimateChange>
     <h3>April 8 2022</h3>
     <h4>Climate Change and its Consequences</h4>
-    <div class = PicCarousel>
-        <div class = numbertext></div>
-        <!--img src-->
-        <div class = caption></div>
-    </div>
+    <body><p>no available pictures</p></body>
     <body>We discussed the consequences of climate change and the necessary action needed to combat it.</body>
 </div>
+<script>
+    let slideIndex = [1,1,1,1,1];
+    let slideId = ["end2223","intF", "BSU", "irann", "basisdiv"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    showSlides(1, 2);
+    showSlides(1, 3);
+    showSlides(1, 4);
 
+    
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+    
+    function showSlides(n, no) {
+      let i;
+      let x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";  
+    }
+    </script>
+    </body>
 
 <!--
 4/28/23 end of the year meeting!
