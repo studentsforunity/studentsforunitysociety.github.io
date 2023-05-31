@@ -1,23 +1,39 @@
 <!DOCTYPE html>
-<nav>
-    <div class="topnav">
-        <a href="sfuhomepage.html">Home</a>
-        <a href="sfumeetingspage.html">Meetings</a>
-        <a href ="sfueventspage.html">Events</a>
-        <a href="sfucontactus.html">Contact</a>
-        <div class = "aboutSFU">
-            <button class = "aboutSFUU">About Us</button>
-            <div class = dropdownAboutUs>
-            <a href = "sfuleadership.html">Leadership</a>
-        </div>
-        </div>
-        
-      </div>
-</nav>
 <html>
-    <head><title>Students For Unity Meetings</title></head>
-    <h1>Students For Unity Meetings</h1>
-    <h2>2022-23</h2>
+    <center><header><h1  style="font-size:850% ">Meetings</h1></header></center>
+    <style>
+        header {
+            padding-left: 110px;
+            padding-right: 110px;
+            padding-top: 110px;
+            padding-bottom: 110px;
+            background-image: url("photos/meetingsbg.jpg");
+            background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color:#ffffff;
+        line-height: 30%;
+        margin-top: -1%;
+        margin-right:-1% ;
+        margin-left:-1%;
+        }
+    </style>
+    <nav>
+        <div class="topnav">
+            <a href="sfuhomepage.html">Home</a>
+            <a href="sfumeetingspage.html">Meetings</a>
+            <a href ="sfueventspage.html">Events</a>
+            <a href="sfucontactus.html">Contact</a>
+            <div class = "aboutSFU">
+                <button class = "aboutSFUU"><a href="sfuaboutus.html">About Us</a></button> 
+                <div class = dropdownAboutUs>
+                <a href = "sfuleadership.html">Leadership</a>
+            </div>
+            </div>
+            
+          </div>
+    </nav>
+    <center><button type="button" class="collapsible"><h2>2022-23</h2></button></center>
 
     <!-- DOCUMENTATION
         Picture name format is "nameOfArticlenumber"
@@ -29,7 +45,9 @@
     <h3>meeting date</h3>
     <h4>Title of Meeting</h4>
     <body>desc. of meeting and photography credits</body></div>-->
-    <body>
+
+<body>
+<center><div class="grid2223">
 <div article = endOftheYear>
     <h3>April 28 2023</h3>
     <h4>End Of The Year Potluck!</h4>
@@ -201,6 +219,7 @@
     <body>no available pictures</body>
     <body><p>We invited Ed Lee from Emory University to speak about the Tohonoo O'odham Nation and Tucson espcially their borders and the indigenous community.</p></body>
 </div>
+</div>
 <div article = gentrification>
     <h3>December 2 2022</h3>
     <h4>Title of Meeting</h4>
@@ -287,6 +306,18 @@
     </div>
     <body>First meeting of the 2022-23 year! We held an open discussion based on the question "Is BASIS Diverse?". Students talked about the differing levels of ethnic, racial, ideological, sexuality, and socioeconomic diversity in the school.</body>
 </div>
+</div>
+
+</div></center>
+<style>
+    .grid2223{
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    
+    </style>
+<center><div class="grid2122">
+<center><button type="button" class="collapsible"><h2>2021-22</h2></button></center>
 <div article = end22>
     <h3>May 13 2022</h3>
     <h4>End of the Year Potluck</h4>
@@ -303,6 +334,14 @@
     <body><p>no available pictures</p></body>
     <body>We discussed the consequences of climate change and the necessary action needed to combat it.</body>
 </div>
+</div></center>
+<style>
+    .grid2122 {
+        display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+    }
+    </style>
 <script>
     let slideIndex = [1,1,1,1,1];
     let slideId = ["end2223","intF", "BSU", "irann", "basisdiv"]
