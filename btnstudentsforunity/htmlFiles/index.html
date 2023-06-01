@@ -1,6 +1,47 @@
 <!DOCTYPE HTML>
 <html>
     <title>Students For Unity Home Page</title>
+    <nav>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="sfumeetingspage.html">Meetings</a>
+            <a href ="sfueventspage.html">Events</a>
+            <a href="sfucontactus.html">Contact</a>
+            <div class = "aboutSFU">
+                <button class = "aboutSFUU" onclick="buttonFunction()"><a href="sfuaboutus.html">About Us</a></button> 
+                <div class = "dropdownAboutUs" id="aboutSFUdropdown">
+                <a href = "sfuleadership.html">Leadership</a>
+            </div>
+            </div>
+            
+          </div>
+    
+    </nav>
+    <style>
+        .nav{
+            position: fixed;
+        }
+        .topnav{
+            overflow: hidden;
+            width: 100%;
+        }
+    </style>
+    <script>
+       
+        function myFunction() {
+          document.getElementById("aboutSFUdropdown").classList.toggle("show");
+        }
+        
+
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropdownAboutUs')) {
+          var myDropdown = document.getElementById("aboutSFUdropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        </script>
     <center><header><h1  style="font-size:850%" >Students For <p>Unity</p></h1></header></center>
     <style>
         header {
@@ -19,22 +60,6 @@
         margin-left:-1%;
         }
     </style>
-<nav>
-    <div class="topnav">
-        <a href="sfuhomepage.html">Home</a>
-        <a href="sfumeetingspage.html">Meetings</a>
-        <a href ="sfueventspage.html">Events</a>
-        <a href="sfucontactus.html">Contact</a>
-        <div class = "aboutSFU">
-            <button class = "aboutSFUU"><a href="sfuaboutus.html">About Us</a></button> 
-            <div class = dropdownAboutUs>
-            <a href = "sfuleadership.html">Leadership</a>
-        </div>
-        </div>
-        
-      </div>
-
-</nav>
 
     <center><body>
         We are a social justice club based on BASIS Tucson North. Join our meetings every Friday from 4-5pm!
