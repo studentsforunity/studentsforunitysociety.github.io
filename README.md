@@ -1,2 +1,7 @@
 # studentsforunitysociety.github.io
-This is the Students For Unity Website! Every single news, meeting, event, and others will be posted here. Contact nshwiajqhsjos#9038 for any suggestions, concerns, or errors. 
+Students For Unity is a highschool affinity organization from BASIS Tucson North. We meet every Friday from 4-5 pm. Our website is updated frequently with our events and weekly meetings.
+
+
+Are you here because you actually wanted to see the website? Then please visit https://studentsforunitysociety.github.io/btnstudentsforunity/htmlFiles/
+
+
