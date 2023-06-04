@@ -1,4 +1,96 @@
 <!DOCTYPE HTML>
+<nav>
+    <div class="topnav">
+
+        <a href="sfuhomepage.html">Home</a>
+        <a href="sfumeetingspage.html">Meetings</a>
+        <a href ="sfueventspage.html">Events</a>
+        <a href="sfucontactus.html">Contact</a>
+        <div class = "aboutSFU">
+            <button class = "aboutSFUU" onclick="buttonFunction()"><a href="sfuaboutus.html">About Us</a></button> 
+            <div class = "dropdownAboutUs" id="aboutSFUdropdown">
+            <a href = "sfuleadership.html">Leadership</a>
+        </div>  
+        </div>
+      </div>
+
+</nav>
+<style>
+      
+    .topnav {overflow: hidden;
+background-color:#a0bedc;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: -1%;
+margin-right:-1% ;
+margin-left:-1%;
+}
+.topnav a {
+float:left;
+font-size: 20px;
+color: black;
+text-align: center;
+padding: 14px 21px;
+text-decoration: none;
+}
+.aboutSFU {
+float:left;
+overflow: hidden;
+}
+.aboutSFU .aboutSFUU {
+cursor: pointer;
+font-size: 18px;  
+border: none;
+outline: none;
+color: white;
+padding: 0px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+.dropdownAboutUs {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdownAboutUs a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+/*.topnav a:hover, .aboutSFU:hover .aboutSFUU, .aboutSFUU:focus {
+background-color: #7e91a3;
+margin-top: 1%;
+margin-right:1% ;
+margin-left:1%;
+}*/
+.show {
+display: block;
+}
+</style>
+<script>
+
+    function buttonFunction() {
+      document.getElementById("aboutSFUdropdown").classList.toggle("show");
+    }
+    
+
+    window.onclick = function(e) {
+      if (!e.target.matches('.aboutSFUU')) {
+      var myDropdown = document.getElementById("aboutSFUdropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
 <center><header><h1  style="font-size:850%">Contact</h1></header></center>
 <style>
     header {
@@ -17,21 +109,7 @@
         margin-left: -1%;
     }
 </style>
-<nav>
-    <div class="topnav">
-        <a href="sfuhomepage.html">Home</a>
-        <a href="sfumeetingspage.html">Meetings</a>
-        <a href ="sfueventspage.html">Events</a>
-        <a href="sfucontactus.html">Contact</a>
-        <div class = "aboutSFU">
-            <button class = "aboutSFUU"><a href="sfuaboutus.html">About Us</a></button> 
-            <div class = dropdownAboutUs>
-            <a href = "sfuleadership.html">Leadership</a>
-        </div>
-        </div>
-        
-      </div>
-</nav>
+
 <html>
 
     <h2>Talk to us!</h2>
