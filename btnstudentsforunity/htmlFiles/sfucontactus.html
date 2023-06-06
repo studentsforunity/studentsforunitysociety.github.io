@@ -1,49 +1,57 @@
 <!DOCTYPE HTML>
 <nav>
     <div class="topnav">
-
-        <a href="sfuhomepage.html">Home</a>
-        <a href="sfumeetingspage.html">Meetings</a>
-        <a href ="sfueventspage.html">Events</a>
-        <a href="sfucontactus.html">Contact</a>
+       
+        <div class = "textwoo">
+            <img class = "logo" src = "photos/StudentsForUnityLogo 2.png" width="60px" height="60px" style="margin-left: 10px;">
         <div class = "aboutSFU">
             <button class = "aboutSFUU" onclick="buttonFunction()"><a href="sfuaboutus.html">About Us</a></button> 
-            <div class = "dropdownAboutUs" id="aboutSFUdropdown">
-            <a href = "sfuleadership.html">Leadership</a>
-        </div>  
+                <div class = "dropdownAboutUs" id="aboutSFUdropdown">
+                <a href = "sfuleadership.html">Leadership</a>    
+    </div>
         </div>
-      </div>
+        <a href="sfucontactus.html">Contact</a>
+        <a href ="sfueventspage.html">Events</a>
+        <a href="sfumeetingspage.html">Meetings</a>
+        <a href="sfuhomepage.html">Home</a>
+    </div>
+     
 
 </nav>
 <style>
+
     .topnav {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        background-color: #a0bedc;
+        background-color: rgba(160, 190, 220, 0.8);
         font-family: 'Nunito';
-        opacity: 100%;
+        
     }
 
-    .topnav a {
-        float: left;
+    .textwoo a {
+        float: right;
         font-size: 20px;
-        color: black;
+        color: white;
         text-align: center;
         padding: 14px 21px;
-        text-decoration: none;
+        text-decoration:none;
+        opacity: 100%;
     }
+    .topnav  a:hover {
+    color: black; 
+}
 
     .aboutSFU {
-        float: left;
+        float: right;
         overflow: hidden;
     }
 
     .aboutSFU .aboutSFUU {
         cursor: pointer;
         font-size: 18px;
-        border: none;
+        border:#353f49;
         outline: none;
         color: white;
         padding: 0px 16px;
