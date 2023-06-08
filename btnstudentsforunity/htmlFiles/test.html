@@ -1,356 +1,125 @@
-<!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=windows-1252"><title>Students For Unity Home Page</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<nav>
+  <div class="topnav">
+     
+      <div class = "textwoo">
+          <img class = "logo" src = "photos/StudentsForUnityLogo 2.png" width="60px" height="60px" style="margin-left: 10px;">
+      <div class = "text">
+      <body>Students For <p>Unity</p></body>
+  </div>
+      <div class = "aboutSFU">
+          <button class = "aboutSFUU" onclick="buttonFunction()"><a href="sfuaboutus.html">About Us<i class="fa fa-caret-down"></i></a>
+              
+          </button> 
+              <div class = "dropdownAboutUs" id="aboutSFUdropdown">
+              <a href = "sfuleadership.html">Leadership</a>    
+  </div>
+      </div>
+      <a href="sfucontactus.html">Contact</a>
+      <a href ="sfueventspage.html">Events</a>
+      <a href="sfumeetingspage.html">Meetings</a>
+      <a href="sfuhomepage.html">Home</a>
+  </div>
+   
+
+</nav>
 <style>
-.collapsible {
-  background-color: #a0bedc;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 20px;
-  font-family: garamond;
-}
-
-.active, .collapsible:hover {
-  background-color: #353f49;
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-</style>
-</head><body><center><header><h1 style="font-size:112px; text-shadow: 4px 3px 2px #000;">Students For <p>Unity</p></h1></header>
-    <style>
-        header {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-image: url("/homepage.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: #ffffff;
-  line-height: 30%;
-  margin-top: -1%;
-  margin-right: -1%;
-  margin-left: -1%;
-  height:560px;
-}
-    </style>
   
 
+  .text{
+      line-height: 30%;
+      position: absolute;
+      padding-left: 7.5%;
+      bottom: 3%;
+      font-size: 20px;
+
+      
+  }
+
+  .topnav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(160, 190, 220, 0.8);
+      font-family: 'Nunito';
+      
+  }
+
+  .textwoo a {
+      float: right;
+      font-size: 15px;
+      color: white;
+      text-align: center;
+      padding: 14px 21px;
+      padding-top: 2%;
+      text-decoration:none;
+      opacity: 100%;
+  }
+  .topnav  a:hover {
+  color: black; 
+}
+
+.aboutSFU {
+margin-left: 50%;
+display: inline-block; 
+overflow: hidden;
+}
 
 
 
-    <p style="font-size: 28px;background: #fff;margin-left: -3%;margin-right: -3%;padding: 15px;margin-top:0px">
-        We are a social justice club based at BASIS Tucson North. Join our meetings every Friday from 4-5pm!
-    </p>
-    <div id="news">
-    <h1>News</h1>
-    <p>See below for quick overviews on recent events for SFU and where to learn more!</p>
-    </div>
 
-<button class="collapsible"><h1>New Leadership!</h1></button>
-<div class="content"> <div id="leadershipcontain">
-    <h2>
-        We are pleased to introduce our new leadership- Anthony! 
-    </h2>
-    <div class="TJLeft">
-        <div class="TJIMG"></div>
-    </div>
-    <div class="TJRight">
-    <div class="TJTXT">
-        <p style="margin: 23px;">My name is Anthony Akator and my 
-pronouns are He/Him, I am most passionate about the importance of Civic 
-engagement and the mechanisms by which we can close socioeconomic 
-disparities. As Co-leader of SFU I will endeavor to: expand the 
-membership of SFU, meet our commitments to community service by 
-networking with other community service organizations, and bolster the 
-ideological perspectives in SFU.</p>
-      </div>
-      </div>
-    </div>
-</div>
+  .aboutSFU .aboutSFUU {
+      cursor: pointer;
+      font-size: 15px;
+      border:#353f49;
+      outline:#353f49;
+      color: white;
+      padding: 0px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+  }
 
-<button class="collapsible"><h1>Language Survey</h1></button>
-<div class="content"><div id="surveycontain">
-    <div class="DATATXT">
-        <p>Due to the racial and ethnic diversity in BASIS Tucson North,
- we surveyed the school to explore the linguistic diversity along with 
-the nuances of each langauge group.</p>
-    </div>
-    <div class="DATARIGHT">
-      <iframe src="Students%20For%20Unity%20Home%20Page_files/pubhtml.html" width="550" height="450">
-    </iframe>
-    </div>
-</div>
-</div>
+  .dropdownAboutUs {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+  }
 
-<button class="collapsible"><h1>Meetings</h1></button>
-<div class="content"><div id="meetingscontain">
-        <p>Our school meetings are currently done for the year! However, we have a <a href="https://sfutesterpg.neocities.org/sfumeetingspage.html"> meeting archive page </a> where you'll see all our meetings for each year! Stay tuned for the 2023-24 meetings!</p>
-        </div>
-</div>
+  .dropdownAboutUs a {
+      float: none;
+      color: black;
+      padding-left: 0px;
+      padding-top: 10%;
+      padding-right: 0px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+  }
 
-<button class="collapsible"><h1>Events</h1></button>
-<div class="content"><div id="eventscontain">
-  <p>
-        There have been no recent events we have attended, but you can see us in these <a href="https://sfutesterpg.neocities.org/sfueventspage.html"> events </a> 
-     from previous years 
-    </p>
-    </div>
-</div>
-
+  .show {
+      display: block;
+  }
+</style>
 
 <script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
+  function buttonFunction() {
+    document.getElementById("aboutSFUdropdown").classList.toggle("show");
+  }
+  
 
-
-
-
-
-<style>
-body {
-  color: black;
-  font-family: "garamond";
-  text-align: center;
-  background-color: #a0bedc;
-  padding-top: 45px;
-  font-size: 15px;
-}
-body a {
-  color: black;
-}
-</style>
-    <nav>
-        <div id="topnav">
-            <a href="https://sfutesterpg.neocities.org/index.html">Home</a>
-            <a href="https://sfutesterpg.neocities.org/sfumeetingspage.html">Meetings</a>
-            <a href="https://sfutesterpg.neocities.org/sfueventspage.html">Events</a>
-            <a href="https://sfutesterpg.neocities.org/sfucontactus.html">Contact</a>
-            <a href="https://sfutesterpg.neocities.org/sfuaboutus.html">About Us</a>
-            <a href="https://sfutesterpg.neocities.org/sfuleadership.html">Leadership</a>
-          </div>
-<style>
-div#news {
-  color:#000
-}
-div#topnav {
-  background-color: #353f49;
-  white-space: nowrap;
-  overflow-y: hidden;
-  font-family: "garamond";
-  border-bottom: 2px solid white;
-  margin: 0px;
-  padding: 11px;
-  position: fixed;
-  left: 0;
-  top: 0px;
-  width: calc(100% - 15px );
-  color: #fff;
-}
-#topnav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 85px;
-}
-</style>
-    
-    </nav>
-    <style>
-        .nav{
-            position: fixed;
-        }
-        .topnav{
-            overflow: hidden;
-            width: 100%;
-        }
-    </style>
-
-
-    <script>
-       
-        function myFunction() {
-          document.getElementById("aboutSFUdropdown").classList.toggle("show");
-        }
-        
-
-        window.onclick = function(e) {
-          if (!e.target.matches('.dropdownAboutUs')) {
-          var myDropdown = document.getElementById("aboutSFUdropdown");
-            if (myDropdown.classList.contains('show')) {
-              myDropdown.classList.remove('show');
-            }
-          }
-        }
-        </script>
-        
-<style>
-#leadershipcontain {
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 10px solid #353f49 !important;
-  border-radius: 50px;
-  margin-top: 20px;
-  background: #353f49;
-    background-color: rgba(21, 25, 28, 0.19);
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-image: none;
-    background-size: auto;
-    background-origin: padding-box;
-    background-clip: border-box;
-  padding: 20px;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-.TJLeft, .DATATXT {
-  float: left;
-  width: calc( 40% - 20px );
-  padding: 10px;
-  padding-bottom: 100%;
-  margin-bottom: -100%;
-}
-.TJIMG {
-  border: 2px solid white;
-  margin-bottom: 20px;
-  border-radius: 15px;
-  background-image: url("/TJintroHome.jpeg");
-  height: 400px;
-  background-size: cover;
-  box-shadow: 7px 7px 7px #353f49;
-}
-.TJRight, .DATARIGHT {
-  width: calc( 60% - 20px );
-  padding: 10px;
-  padding-bottom: 10px;
-  float:right;
-  padding-bottom: 100%;
-  margin-bottom: -100%;
-}
-.TJTXT, .DATATXT {
-  background-color: #fff;
-  border: 2px solid #353f49;
-	border-image-slice: 100%;
-  border-image-slice: 1;
-  border-radius: 15px;
-  padding: 10px 10px;
-  text-align: center;
-  margin-top: 0px;
-  font-size:28px
-}
-
-#surveycontain {
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 10px solid #353f49 !important;
-  border-radius: 50px;
-  margin-top: 20px;
-  background: #353f49;
-    background-color: rgba(21, 25, 28, 0.19);
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-image: none;
-    background-size: auto;
-    background-origin: padding-box;
-    background-clip: border-box;
-  padding: 20px;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-#meetingscontain {
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 10px solid #353f49 !important;
-  border-radius: 50px;
-  margin-top: 20px;
-  background: #353f49;
-    background-color: rgba(21, 25, 28, 0.19);
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-image: none;
-    background-size: auto;
-    background-origin: padding-box;
-    background-clip: border-box;
-  padding: 20px;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-#eventscontain {
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 10px solid #353f49 !important;
-  border-radius: 50px;
-  margin-top: 20px;
-  background: #353f49;
-    background-color: rgba(21, 25, 28, 0.19);
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-image: none;
-    background-size: auto;
-    background-origin: padding-box;
-    background-clip: border-box;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-</style>
-        
-        
-        
-        
-        
-
-<div id="footer">
-<div>
-	<p>
-		<a href="https://sfutesterpg.neocities.org/sfuaboutus.html">About</a> <a href="https://sfutesterpg.neocities.org/sfucontactus.html">Contact</a> 
-		</p><p>Students For Unity, Website not affiliated with Basis Ed</p>
-  	<p></p>
-</div>	
-</div>
-
-
-</center></body></html>
-
-        
-        
-        
-        
-        
-
-
+  window.onclick = function(e) {
+    if (!e.target.matches('.aboutSFUU')) {
+    var myDropdown = document.getElementById("aboutSFUdropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }
+  </script>

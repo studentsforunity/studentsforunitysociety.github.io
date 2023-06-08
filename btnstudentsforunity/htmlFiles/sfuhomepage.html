@@ -1,14 +1,20 @@
 <!DOCTYPE HTML>
 <html>
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <title>Students For Unity Home Page</title>
     <nav>
         <div class="topnav">
            
             <div class = "textwoo">
                 <img class = "logo" src = "photos/StudentsForUnityLogo 2.png" width="60px" height="60px" style="margin-left: 10px;">
+            <div class = "text">
+            <body>Students For <p>Unity</p></body>
+        </div>
             <div class = "aboutSFU">
-                <button class = "aboutSFUU" onclick="buttonFunction()"><a href="sfuaboutus.html">About Us</a></button> 
+                <button class = "aboutSFUU" onclick="buttonFunction()"><a href="sfuaboutus.html">About Us<i class="fa fa-caret-down"></i></a>
+                    
+                </button> 
                     <div class = "dropdownAboutUs" id="aboutSFUdropdown">
                     <a href = "sfuleadership.html">Leadership</a>    
         </div>
@@ -22,6 +28,17 @@
     
     </nav>
     <style>
+        
+
+        .text{
+            line-height: 30%;
+            position: absolute;
+            padding-left: 7.5%;
+            bottom: 3%;
+            font-size: 20px;
+
+            
+        }
 
         .topnav {
             position: fixed;
@@ -35,10 +52,11 @@
     
         .textwoo a {
             float: right;
-            font-size: 20px;
+            font-size: 15px;
             color: white;
             text-align: center;
             padding: 14px 21px;
+            padding-top: 2%;
             text-decoration:none;
             opacity: 100%;
         }
@@ -46,14 +64,18 @@
         color: black; 
 }
     
-        .aboutSFU {
-            float: right;
-            overflow: hidden;
-        }
+.aboutSFU {
+   margin-left: 50%;
+    display: inline-block; 
+    overflow: hidden;
+}
+
+
+
     
         .aboutSFU .aboutSFUU {
             cursor: pointer;
-            font-size: 18px;
+            font-size: 15px;
             border:#353f49;
             outline: none;
             color: white;
@@ -75,7 +97,11 @@
         .dropdownAboutUs a {
             float: none;
             color: black;
-            padding: 12px 16px;
+            padding-left: 0px;
+            padding-top: 10%;
+            padding-right: 0px;
+            margin-top: 10px;
+            margin-bottom: 5px;
             text-decoration: none;
             display: block;
             text-align: left;
@@ -102,13 +128,20 @@
           }
         }
         </script>
-    <center><header><h1  style="font-size:850%" >Students For <p>Unity</p></h1></header></center>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#title").fadeIn();
+      ;
+    });
+    </script>-->
+    <center><header><h1  style="font-size:650%" ><div id="title">Promoting Activism and <p>Civil Discussion</p></div></h1></header></center>
     <style>
         header {
             padding-left: 15px;
             padding-right: 15px;
             padding-top: 65px;
-            padding-bottom: 65px;
+            padding-bottom: 200px;
             background-image: url("photos/homepagebg.JPG");
             background-repeat: no-repeat;
         background-position: center;
@@ -119,6 +152,12 @@
         margin-right:-1% ;
         margin-left:-1%;
         font-family: 'Nunito';
+        }
+
+        #title{
+            line-height: 20%;
+            padding-bottom: 30px;
+            padding-top: 30px;
         }
     </style>
 
@@ -137,34 +176,45 @@
         padding-bottom: 15px;
     }
 </style>
-
-    <center><h1>New Leadership!</h1>
-    <h2>
-        We are pleased to introduce our new leadership- Anthony! 
-    </h2>
+<div class = "homenews">
+<button type = "button" class = "collapsible"><h2>News</h2></button>
+<div class = "thehomenews">
+    <div class = "girdhome">
     <div class = "TJ">
+    <center><h1>New Leadership!</h1>
         <h3>Anthony</h3>
-        <img src = "photos/TJintroHome.jpeg" width = 504 height= 672 >
+        <img src = "photos/TJintroHome.jpeg" width = 300 height= 381.333>
         <body><p><q>My name is Anthony Akator and my pronouns are He/Him, I am most passionate about the importance of Civic engagement and the mechanisms by which we can close socioeconomic disparities. As Co-leader of SFU I will endeavor to: expand the membership of SFU, meet our commitments to community service by networking with other community service organizations, and bolster the ideological perspectives in SFU.</q></p></body> 
     </div>
 </center>
+<div class = "langsurvey">
     <center><h1>Language Survey</h1>
     <body>
         <p>Due to the racial and ethnic diversity in BASIS Tucson North, we surveyed the school to explore the linguistic diversity along with the nuances of each langauge group.</p>
-        <center><iframe width = 550 height = 450
+        <center><iframe width = 400 height = 350
         src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTmPskbVeh8tS2CsWnev067HowAVqKygBTNAd2QfAGcw7DO7_5Imb5_o_RwMzsFzAVtVvbSHX-G6gdX/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" >
     </iframe></center>
+    <p><a href="https://docs.google.com/document/d/1t2_F9Zvee1e4nhFw4lwI0_Ew6IOaJCGf-UrMBaoeixM/edit?usp=sharing">Read More Information Here</a></p>
     </body></center>
-
-    <center><h1>Meetings</h1>
+</div>
+</div>
+</div>
+</div>
+    <div class = "meetings">
+<center><h1>Meetings</h1>
     <body>
         Our school meetings are currently done for the year! However, we have a <a href=sfumeetingspage.html> meeting archive page </a> where you'll see all our meetings for each year! Stay tuned for the 2023-24 meetings!
     </body>
+
+</div></center>
+
+<center><div class = "events">
     <h1>Events</h1>
     <body>
         There have been no recent events we have attended, but you can see us in these <a href=sfueventspage.html> events </a> 
      from previous years 
     </body>
+</div>
     <body>
     </center>   
     </body>
@@ -173,4 +223,68 @@
         background-color: #353f49;
     }
 </style>
+<style>
+    .collapsible {
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: center;
+      outline: none;
+      border: none;
+      transition: 0.4s;
+  }
+
+  .active, .collapsible:hover {
+      background-color: #ccc;
+  }
+
+  .stuff {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+  }
+
+  .girdhome{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .TJ{
+        background-color: #a0bedc;
+        width: 450px;
+        margin-top: 10px;
+        margin-left:100px;
+    }
+    .langsurvey{
+        background-color: #a0bedc;
+        width: 450px;
+        margin-top:10px;
+    }
+    .homenews{
+        font-family: 'Nunito';
+    }
+    .meetings{
+        font-family: 'Nunito'
+    }
+    .events {
+        font-family: 'Nunito'
+    }
+      </style>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
 </html>

@@ -1,0 +1,120 @@
+<html>
+    <div class = "Philippines2022">
+        <div class="container">
+          <div class = "phBACKGROUND">
+            <img src = "photos/philippines.avif" width = "1460">
+          </div>
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <center><h3 class="animate-charcter">PHILIPPINES</h3></center>
+              </div>
+            </div>
+        </div>
+        <div class = "PHtext">
+        <h2>Region Leader: Blessy</h2>
+        <body>
+            <p>The Philippines table sold delicious Filipino snacks, including turon, halo-halo, and various chips/crackers along with offering teacher cardboard cutouts, dried mangoes, and chocolate for the raffles.</p>
+            <p>The Philippines table threw three performances:</p>
+            <p>1. Tinikling, a traditional folk dance involving two people dancing between two bamboo sticks being clicked. An amazing job to Kyla, Blessy, Mary Bless, William, Athena, and Therese!</p>
+            <p>2. Kahit Ayaw Mo Na, which translates to "Even if you don't want it anymore", is This Band's popular song encapsulating the emotions and hardships entailed in love. A beautiful cover done by Kiera!</p>
+            <p>3. Sarah Geronimo's hit song "Tala", translating to "star", is about the shining star within people. Thank you to Athena, Blessy, Kyla, and Kiera for ending the Filipino performances with a bang!</p>
+        </body>
+    </div>
+        <div class = VidPH>
+            <center>
+            <div class = "PHILIPPINE">
+            <h3>Opening Speech</h3>
+            <iframe src="https://www.veed.io/embed/6b36a823-5bcd-4148-bb6d-e54b8681162b" width="90%" height="504" frameborder="0" title="blessySpeech" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+            <div class = "PHILIPPINE">
+            <h3>Tinikling</h3>
+            <iframe src="https://www.veed.io/embed/3d1b0129-7090-43e3-91fe-38bbc91a00a6" width="90%" height="504" frameborder="0" title="tinikling" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+            <div class = "PHILIPPINE">
+            <h3>Kahit Ayaw Mo Na</h3>
+            <iframe src="https://www.veed.io/embed/5dd65ac6-ab4d-49a2-9da2-e293f1ba45a9" width="90%" height="504" frameborder="0" title="kahitAyawMoNa" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+            <div class = "PHILIPPINE">
+            <h3>Tala</h3>
+            <iframe src="https://www.veed.io/embed/5272d3ca-e3c8-44bf-9e79-0d8374908525" width="90%" height="504" frameborder="0" title="tala" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        </center>
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+    </div>
+    <style>
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top:145%;
+      }
+      
+      .next {
+        right: 0; /* Adjust the right value */
+        border-radius: 3px 0 0 3px;
+      }
+      
+      
+      </style>
+
+    <script>
+        let slideIndex = [1];
+        let slideId = ["PHILIPPINE"]
+        showSlides(1, 0);
+
+    
+        
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+          let i;
+          let x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        </script>
+    <style>
+        .animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #ffffff 0%,
+    #0032A0 29%,
+    #BF0D3E 67%,
+    #FED141 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+margin-top: -60%;
+border: 5px;
+border-color: #0032A0;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.PHtext {
+    margin-top: 10%;
+}
+
+    </style>
+</html>
