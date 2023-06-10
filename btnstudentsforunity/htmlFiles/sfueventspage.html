@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
 <html>
     <nav>
         <div class="topnav">
            
             <div class = "textwoo">
-                <img class = "logo" src = "photos/StudentsForUnityLogo 2.png" width="60px" height="60px" style="margin-left: 10px;">
+                <img class = "logo" src = "photos/StudentsForUnityLogo 2.png" width="60px" height="60px" style="margin-left: 10px; margin-top:-5%; padding-top:0px; padding-bottom: 0px;">
             <div class = "aboutSFU">
                 <button class = "aboutSFUU" onclick="buttonFunction()"><a href="sfuaboutus.html">About Us</a></button> 
                     <div class = "dropdownAboutUs" id="aboutSFUdropdown">
@@ -22,11 +23,12 @@
     <style>
 
         .topnav {
-            position: fixed;
+            margin-top: -3%;
+
             top: 0;
             left: 0;
             right: 0;
-            background-color: rgba(160, 190, 220, 0.8);
+            background-color:none;
             font-family: 'Nunito';
             
         }
@@ -36,7 +38,7 @@
             font-size: 20px;
             color: white;
             text-align: center;
-            padding: 14px 21px;
+            padding: 40px 21px;
             text-decoration:none;
             opacity: 100%;
         }
@@ -82,6 +84,9 @@
         .show {
             display: block;
         }
+        .dropdownAboutUs a:hover {background-color: none;}
+
+.aboutSFU:hover .dropdownAboutUs {display: block;}
     </style>
     <script>
     
@@ -99,25 +104,27 @@
           }
         }
         </script>
-<center><header><h1  style="font-size:850% ">Events</h1></header></center>
+  <div class = "eventsheader">
+    <div class = "eventsheaderwords">  
+<center><header><h1  style="font-size:850% ">Events</h1></header></center></div>
+</div>
 <style>
-    header {
-        padding-left: 110px;
-            padding-right: 110px;
-            padding-top: 110px;
-            padding-bottom: 110px;
-            background-image: url("photos/eventsbg\ 2.jpg");
-            background-repeat: repeat;
-        background-position: center;
-        background-size: contain;
-        color:#ffffff;
-        line-height: 30%;
-        margin-top: -1%;
-        margin-right:-1% ;
-        margin-left:-1%;
-        
+    .eventsheader {
+    background-image:url('photos/eventsbg\ 2.jpg');
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200%;
+  margin-left: -1%;
+  margin-right: -1%;
+  margin-top: -4%;
+  margin-bottom: 10%;
+  padding-top: 10%;
+  padding-bottom: 40%;
     }
 </style>
+<div class = "content">
     <center><body>
         <center>
     <h3>2022-23 Year</h3>
@@ -149,7 +156,7 @@
     </div>
     </div>
     </center>
-</div>
+
     <div class="BMY22">
     
         <button type="button" class="collapsible"><h2><a href=sfuBMY22.html>BASIS Meet Yourself 2022</a></h2></button>
@@ -351,8 +358,14 @@
         </body>
     </div>
     </div>
+</div>
 
     <style>
+    
+    .content {
+        margin-top: -8%;
+        margin-bottom: -10%;
+    }
       .collapsible {
         cursor: pointer;
         padding: 18px;

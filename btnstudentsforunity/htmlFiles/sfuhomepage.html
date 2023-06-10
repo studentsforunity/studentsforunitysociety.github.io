@@ -7,33 +7,36 @@
         <div class="topnav">
            
             <div class = "textwoo">
-                <img class = "logo" src = "photos/StudentsForUnityLogo 2.png" width="60px" height="60px" style="margin-left: 10px;">
+                <img class = "logo" src = "photos/StudentsForUnityLogo 2.png" width="60px" height="60px" style="margin-left: 10px; margin-top: 1%;">
             <div class = "text">
-            <body>Students For <p>Unity</p></body>
+            <body style="color: white;">Students For <p>Unity</p></body>
         </div>
+
+            <a href="sfucontactus.html">Contact</a>
+            <a href ="sfueventspage.html">Events</a>
+            <a href="sfumeetingspage.html">Meetings</a>
+            <a href="sfuhomepage.html">Home</a>
             <div class = "aboutSFU">
-                <button class = "aboutSFUU" onclick="buttonFunction()"><a href="sfuaboutus.html">About Us<i class="fa fa-caret-down"></i></a>
+                <button class = "aboutSFUU" onclick="buttonFunction()"><a href="sfuaboutus.html">About Us</a>
                     
                 </button> 
                     <div class = "dropdownAboutUs" id="aboutSFUdropdown">
                     <a href = "sfuleadership.html">Leadership</a>    
         </div>
             </div>
-            <a href="sfucontactus.html">Contact</a>
-            <a href ="sfueventspage.html">Events</a>
-            <a href="sfumeetingspage.html">Meetings</a>
-            <a href="sfuhomepage.html">Home</a>
         </div>
          
     
     </nav>
     <style>
+
         
 
         .text{
             line-height: 30%;
             position: absolute;
             padding-left: 7.5%;
+            margin-left: -2.5%;
             bottom: 3%;
             font-size: 20px;
 
@@ -41,11 +44,10 @@
         }
 
         .topnav {
-            position: fixed;
+            /*position: fixed;*/
             top: 0;
             left: 0;
             right: 0;
-            background-color: rgba(160, 190, 220, 0.8);
             font-family: 'Nunito';
             
         }
@@ -110,6 +112,9 @@
         .show {
             display: block;
         }
+        .dropdownAboutUs a:hover {background-color: none;}
+
+.aboutSFU:hover .dropdownAboutUs {display: block;}
     </style>
     
     <script>
@@ -141,33 +146,32 @@
 </div>
 </div>
     <style>
-        .homeheader{
-    background-image: url('photos/homepage.jpg');
+            .homeheader {
+    background-image:url('photos/homepagebg.JPG');
     background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height:50%;
+  min-height: 200%;
   margin-left: -1%;
   margin-right: -1%;
+  margin-top: -6.5%;
   margin-bottom: 10%;
-  margin-top: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 10%;
+  padding-bottom: 20%;
     }
 
 
         #title{
             line-height: 20%;
-            padding-bottom: 50%;
-            padding-top: 50%;
         }
     </style>
 
 <div class = "content">
 <div class="aboutUsshort">
 <center><body>
-        We are a social justice club based on BASIS Tucson North. Join our meetings every Friday from 4-5pm!
+        We are a social justice club based on BASIS Tucson North. <p>Join our meetings every Friday from 4-5pm!</p>
+          
     </body></center></div>
 
 <style>
@@ -204,7 +208,7 @@
 </div>
 </div>
 </div>
-    <div class = "meetings">
+    <div class = "meetings" style="color: white;">
 <center><h1>Meetings</h1>
     <body>
         Our school meetings are currently done for the year! However, we have a <a href=sfumeetingspage.html> meeting archive page </a> where you'll see all our meetings for each year! Stay tuned for the 2023-24 meetings!
@@ -212,7 +216,7 @@
 
 </div></center>
 
-<center><div class = "events">
+<center><div class = "events" style="color: white;">
     <h1>Events</h1>
     <body>
         There have been no recent events we have attended, but you can see us in these <a href=sfueventspage.html> events </a> 
@@ -229,8 +233,16 @@
     }
 </style>
 <style>
+    .homeheaderwords{
+        font-family: "nunito";
+        color:white;
+    }
+    .aboutUsshort{
+        font-family: "nunito";
+        color: white;
+    }
     .content{
-        margin-top: 10%;
+        margin-top: -10%;
     }
     .collapsible {
       cursor: pointer;
@@ -262,12 +274,13 @@
         background-color: #a0bedc;
         width: 450px;
         margin-top: 10px;
-        margin-left:100px;
+        margin-left:120px;
     }
     .langsurvey{
         background-color: #a0bedc;
         width: 450px;
         margin-top:10px;
+        margin-left: 50px;
     }
     .homenews{
         font-family: 'Nunito';
