@@ -1,10 +1,10 @@
 <!DOCTYPE html>
+<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
 <html>
     <nav>
         <div class="topnav">
            
             <div class = "textwoo">
-                <img class = "logo" src = "photos/StudentsForUnityLogo 2.png" width="60px" height="60px" style="margin-left: 10px;">
             <div class = "aboutSFU">
                 <button class = "aboutSFUU" onclick="buttonFunction()"><a href="sfuaboutus.html">About Us</a></button> 
                     <div class = "dropdownAboutUs" id="aboutSFUdropdown">
@@ -22,21 +22,21 @@
     <style>
 
         .topnav {
-            position: fixed;
+            margin-top: 3%;
             top: 0;
             left: 0;
             right: 0;
-            background-color: rgba(160, 190, 220, 0.8);
+            background-color:none;
             font-family: 'Nunito';
             
         }
     
         .textwoo a {
             float: right;
-            font-size: 20px;
+            font-size: 15px;
             color: white;
             text-align: center;
-            padding: 14px 21px;
+            padding: 40px 21px;
             text-decoration:none;
             opacity: 100%;
         }
@@ -55,7 +55,6 @@
             border:#353f49;
             outline: none;
             color: white;
-            padding: 0px 16px;
             background-color: inherit;
             font-family: inherit;
             margin: 0;
@@ -82,6 +81,9 @@
         .show {
             display: block;
         }
+        .dropdownAboutUs a:hover {background-color: none;}
+
+.aboutSFU:hover .dropdownAboutUs {display: block;}
     </style>
     <script>
     
@@ -99,23 +101,25 @@
           }
         }
         </script>
-<center><header><h1  style="font-size:850% ">Meetings</h1></header></center>
+
+<div class = "meetingsheader">
+    <div class = "meetingsheaderwords">  
+<center><header><h1  style="font-size:850%; font-family:nunito; color: white; text-align: center; margin-top: 15%;">Meetings</h1></header></center></div>
+</div>
 <style>
-    header {
-        padding-left: 110px;
-            padding-right: 110px;
-            padding-top: 110px;
-            padding-bottom: 110px;
-            background-image: url("photos/meetingsbg.jpg");
-            background-repeat: repeat;
-        background-position: center;
-        background-size: contain;
-        color:#ffffff;
-        line-height: 30%;
-        margin-top: -1%;
-        margin-right:-1% ;
-        margin-left:-1%;
-        
+    .meetingsheader {
+    background-image:url('photos/meetingsbg.jpg');
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200%;
+  margin-left: -1%;
+  margin-right: -1%;
+  margin-top: -4%;
+  margin-bottom: 10%;
+  padding-top: 10%;
+  padding-bottom: 40%;
     }
 </style>
     <center><body>
