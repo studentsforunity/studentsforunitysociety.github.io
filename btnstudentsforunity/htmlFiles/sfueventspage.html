@@ -121,10 +121,9 @@
   padding-bottom: 40%;
     }
 </style>
-<div class = "content">
+<div class = "content" style = "font-family: nunito; background-color: #353f49;">
     <center><body>
-        <center>
-    <h3>2022-23 Year</h3>
+    <h3 style="color: white; margin-top: -2%; font-size: 20px;">2022-23 Year</h3>
     <div class="MLK">
     
         <button type="button" class="collapsible"><h2>MLK March</h2></button>
@@ -149,10 +148,15 @@
         <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
         </div>
-        <body>We teamed up with the NAACP and represented our community in the MLK Day parade!</body>
+        <body class = "MLKbody" >We teamed up with the NAACP and represented our community in the MLK Day parade!</body>
     </div>
     </div>
-    </center>
+    <style>
+        .MLKPics{
+            padding-left: 10%;
+        }
+
+    </style>
 
     <div class="BMY22">
     
@@ -232,7 +236,7 @@
         <body>We teamed up with the Make A Change club of BASIS Tucson North to do a campus-wide cleanup! We had a lot of fun with the Make A Change Club in the process!</body>
     </div>
     </div>
-    <h3>2021-22 Year</h3>
+    <h3 style="color: white;">2021-22 Year</h3>
 
     <div class="bakesale">
         <button type="button" class="collapsible"><h2>Cultural Bakesale 2022</h2></button>
@@ -359,9 +363,17 @@
 
     <style>
     
+    
     .content {
-        margin-top: -8%;
+        margin-top: -15%;
         margin-bottom: -10%;
+        padding-top: 3%;
+    
+        
+        margin-right: -1%;
+        margin-left: -3%;
+        
+        color: white;
     }
       .collapsible {
         cursor: pointer;
@@ -369,12 +381,18 @@
         width: 100%;
         text-align: center;
         outline: none;
-        border: none;
+        border-bottom:  40%;
+        border-top:  40%;
+        border-color: #66798c;
+        color: #353f49;
         transition: 0.4s;
+        background-color: #a0bedc;
+        color: white;
+        margin-top: 0.5%;
     }
 
     .active, .collapsible:hover {
-        background-color: #ccc;
+        background-color:#829bb4;
     }
 
     .stuff {

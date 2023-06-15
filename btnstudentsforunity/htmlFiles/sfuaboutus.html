@@ -5,11 +5,10 @@
         <div class="topnav">
            
             <div class = "textwoo">
-                <img class = "logo" src = "photos/StudentsForUnityLogo 2.png" width="60px" height="60px" style="margin-left: 10px;">
             <div class = "aboutSFU">
                 <button class = "aboutSFUU" onclick="buttonFunction()"><a href="sfuaboutus.html">About Us</a></button> 
                     <div class = "dropdownAboutUs" id="aboutSFUdropdown">
-                    <a href = "sfuleadership.html">Leadership</a>    
+                    <a href = "sfuleadership.html">Leadership</a>   
         </div>
             </div>
             <a href="sfucontactus.html">Contact</a>
@@ -21,29 +20,29 @@
     
     </nav>
     <style>
-
+    
         .topnav {
-            position: fixed;
+            margin-top: 3%;
             top: 0;
             left: 0;
             right: 0;
-            background-color: rgba(160, 190, 220, 0.8);
+            background-color:none;
             font-family: 'Nunito';
             
         }
     
         .textwoo a {
             float: right;
-            font-size: 20px;
+            font-size: 15px;
             color: white;
             text-align: center;
-            padding: 14px 21px;
+            padding: 40px 21px;
             text-decoration:none;
             opacity: 100%;
         }
         .topnav  a:hover {
         color: black; 
-}
+    }
     
         .aboutSFU {
             float: right;
@@ -56,7 +55,6 @@
             border:#353f49;
             outline: none;
             color: white;
-            padding: 0px 16px;
             background-color: inherit;
             font-family: inherit;
             margin: 0;
@@ -83,63 +81,9 @@
         .show {
             display: block;
         }
-        .topnav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: #a0bedc;
-            font-family: 'Nunito';
-            opacity: 100%;
-        }
+        .dropdownAboutUs a:hover {background-color: none;}
     
-        .topnav a {
-            float: left;
-            font-size: 20px;
-            color: black;
-            text-align: center;
-            padding: 14px 21px;
-            text-decoration: none;
-        }
-    
-        .aboutSFU {
-            float: left;
-            overflow: hidden;
-        }
-    
-        .aboutSFU .aboutSFUU {
-            cursor: pointer;
-            font-size: 18px;
-            border: none;
-            outline: none;
-            color: white;
-            padding: 0px 16px;
-            background-color: inherit;
-            font-family: inherit;
-            margin: 0;
-        }
-    
-        .dropdownAboutUs {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-    
-        .dropdownAboutUs a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-    
-        .show {
-            display: block;
-        }
+    .aboutSFU:hover .dropdownAboutUs {display: block;}
     </style>
     <script>
     
@@ -157,19 +101,35 @@
           }
         }
         </script>
-<div class = "aboutusheader">
-    <div class = "aboutusheaderwords">
-    <center><h1  style="font-size:850% ">About Us</h1></center>
-</div>
-</div>
+    
+    <div class = "aboutusheader">
+    <div class = "aboutusheaderwords">  
+    <center><header><h1  style="font-size:850%; font-family:nunito; color: white; text-align: center; margin-top: 15%;">About Us</h1></header></center></div>
+    </div>
+    <style>
+    .aboutusheader {
+    background-image:url('photos/aboutusbg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200%;
+    margin-left: -1%;
+    margin-right: -1%;
+    margin-top: -4%;
+    margin-bottom:5%;
+    padding-top: 10%;
+    padding-bottom: 3%;
+    }
+    </style>
 <div class = "thecontent">
     <body>
-        <center><p style = "font-family: nunito; font-size: 150%;">Our mission is to encourage activism, civil discussion, and cultivate a community built on racial, ethnic, gender identity, religious, and ideological diversity. </p></center>
-        <h2>Where we started</h2>
-        <p style="padding-left: 45%; padding-right: 85%; margin-left: -30%; margin-right: -30%;">"In freshman year, Ms. Rogers and Dr. Shroff were thinking of starting a minority authority book club the next year. I was very excited to join so you could imagine my sadness when they told me that their schedules were so packed that their club was looking to not be a possibility. After a few after school meetings and emails, I managed to found the club along with my close friend Ibrahim Bah under the condition that we would be the main pionners of the club. After a few posters and announcements, we managed to attract four members to our meeting! It was a shaky start, yet after a few more months and reaching out to people individually, Students for Unity started gaining momentum building up to where it is today". -Christopher Amanat (founder of Students for Unity)</p>
+        <center><p style = "font-family: nunito; font-size: 150%; margin-top: -3%; padding-left: 20%; padding-right: 20%;">Our mission is to encourage activism, civil discussion, and cultivate a community built on racial, ethnic, gender identity, religious, and ideological diversity. </p></center>
+        <h2 style = "font-family: nunito;">Where we started</h2>
+        <p style="padding-left: 35%; padding-right: 85%; margin-left: -30%; margin-right: -30%; font-family: nunito;">"In freshman year, Ms. Rogers and Dr. Shroff were thinking of starting a minority authority book club the next year. I was very excited to join so you could imagine my sadness when they told me that their schedules were so packed that their club was looking to not be a possibility. After a few after school meetings and emails, I managed to found the club along with my close friend Ibrahim Bah under the condition that we would be the main pionners of the club. After a few posters and announcements, we managed to attract four members to our meeting! It was a shaky start, yet after a few more months and reaching out to people individually, Students for Unity started gaining momentum building up to where it is today". -Christopher Amanat (founder of Students for Unity)</p>
         <!--<img id = "photo" src = "photos/aboutusphoto.jpg">-->
         </body>
-       <center><h1 style="padding-bottom: 2%;">Check us out on these sites!</h1></center>
+       <center><h1 style="padding-bottom: 2%; font-family: nunito;">Check us out on these sites!</h1></center>
        <div class = "insta">
         <center><a href = "https://www.instagram.com/studentsforunitysociety/">
             <img src = "photos/Instagram_logo_2016.svg.jpg" width="150" height="150">
@@ -191,28 +151,10 @@
         height:300px;
         
     }*/
-    .aboutusheader{
-    background-image: url('photos/aboutusbg.jpg');
-    background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100%;
-  margin-left: -1%;
-  margin-right: -1%;
-  padding-bottom: 10%;
-  padding-top: -10%;
-    }
 
-    .aboutusheaderwords{
-        padding-bottom: 10%;
-        padding-top: 10%;
-        font-family: "nunito";
-        color:white;
-        
-    }
     .thecontent a{
         font-family: "nunito";
+        margin-top: -2%;
         margin-right: -10%;
         margin-left: -10%;
     }
