@@ -148,8 +148,8 @@
         font-size: 200%;
         padding-left: 15px;
         padding-right: 15px;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 25px;
+        padding-bottom: 5px;
     }
 </style>
 <div class = "homenews">
@@ -159,23 +159,46 @@
     <div class = "TJ">
     <center><h1>New Leadership!</h1>
         <h3>Anthony</h3>
-        <img src = "photos/TJintroHome.jpeg" width = 300 height= 381.333>
-        <body><p><q>Leadership Statement:  As a member of SFU since its founding, I am committed to its values of diversity, discussion, and debate. As a member of leadership of Students for Unity, I will endeavor to bolster the ideological diversity and community service obligations of SFU.  I will seek to incorporate new perspectives in meetings  and deliver positive change in our community through beautification projects, civic engagement opportunities, etc.</q></p></body> 
-    </div>
+        <img src = "photos/TJintroHome.jpeg" width = 450 height= 531.333>
+        <div class ="tjleadership"><body><p><q>As a member of SFU since its founding, I am committed to its values of diversity, discussion, and debate. As a member of leadership of Students for Unity, I will endeavor to bolster the ideological diversity and community service obligations of SFU.  I will seek to incorporate new perspectives in meetings  and deliver positive change in our community through beautification projects, civic engagement opportunities, etc.</q></p></body> 
+        </div></div>
 </center>
+<style>
+
+    .tjleadership{
+        text-align: justify;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        color: black;
+
+    }
+</style>
 <div class = "langsurvey">
     <center><h1>Language Survey</h1>
     <body>
-        <p>Due to the racial and ethnic diversity in BASIS Tucson North, we surveyed the school to explore the linguistic diversity along with the nuances of each langauge group.</p>
-        <center><iframe width = 400 height = 350
+        <div class = "langsurveycontent">
+        <center><iframe width = 446 height = 531.333
         src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTmPskbVeh8tS2CsWnev067HowAVqKygBTNAd2QfAGcw7DO7_5Imb5_o_RwMzsFzAVtVvbSHX-G6gdX/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" >
     </iframe></center>
+    <div class="langsurveywords" ><p>Due to the racial and ethnic diversity in BASIS Tucson North, we surveyed the school to explore the linguistic diversity along with the nuances of each langauge group.</p></div>
     <p><a href="https://docs.google.com/document/d/1t2_F9Zvee1e4nhFw4lwI0_Ew6IOaJCGf-UrMBaoeixM/edit?usp=sharing">Read More Information Here</a></p>
+    </div>
     </body></center>
 </div>
 </div>
 </div>
 </div>
+<style>
+    .langsurveycontent{
+        margin-top: 14%;
+    }
+    .langsurveywords{
+        text-align:justify;
+        margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 7%;
+    }
+</style>
     <div class = "meetings" style="color: white;">
 <center><h1>Meetings</h1>
     <body>
@@ -265,6 +288,9 @@
     }
     .homenews{
         font-family: 'Nunito';
+    }
+    .thehomenews{
+        display: none;
     }
     .meetings{
         font-family: 'Nunito'
