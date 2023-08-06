@@ -1,0 +1,126 @@
+    <html>
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+        <nav>
+            <div class="topnav">
+               
+                <div class = "textwoo">
+                <div class = "aboutSFU">
+                    <button class = "aboutSFUU" onclick="buttonFunction()"><a href="sfuaboutus.html">About Us</a></button> 
+                        <div class = "dropdownAboutUs" id="aboutSFUdropdown">
+                        <a href = "sfuleadership.html">Leadership</a>    
+            </div>
+                </div>
+                <a href="sfucontactus.html">Contact</a>
+                <a href ="sfueventspage.html">Events</a>
+                <a href="sfumeetingspage.html">Meetings</a>
+                <a href="sfuhomepage.html">Home</a>
+            </div>
+             
+        
+        </nav>
+        <style>
+    
+            .topnav {
+                margin-top: 3%;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color:none;
+                font-family: 'Nunito';
+                
+            }
+        
+            .textwoo a {
+                float: right;
+                font-size: 15px;
+                color: white;
+                text-align: center;
+                padding: 40px 21px;
+                text-decoration:none;
+                opacity: 100%;
+            }
+            .topnav  a:hover {
+            color: black; 
+    }
+        
+            .aboutSFU {
+                float: right;
+                overflow: hidden;
+            }
+        
+            .aboutSFU .aboutSFUU {
+                cursor: pointer;
+                font-size: 18px;
+                border:#353f49;
+                outline: none;
+                color: white;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+        
+            .dropdownAboutUs {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+        
+            .dropdownAboutUs a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+        
+            .show {
+                display: block;
+            }
+            .dropdownAboutUs a:hover {background-color: none;}
+    
+    .aboutSFU:hover .dropdownAboutUs {display: block;}
+        </style>
+        <script>
+        
+            function buttonFunction() {
+              document.getElementById("aboutSFUdropdown").classList.toggle("show");
+            }
+            
+        
+            window.onclick = function(e) {
+              if (!e.target.matches('.aboutSFUU')) {
+              var myDropdown = document.getElementById("aboutSFUdropdown");
+                if (myDropdown.classList.contains('show')) {
+                  myDropdown.classList.remove('show');
+                }
+              }
+            }
+            </script>
+      <div class = "eventsheader">
+        <div class = "eventsheaderwords">  
+    <center><header><h1  style="font-size:850%; font-family:nunito; color: rgb(255, 255, 255); text-align: center; margin-top: 15%;">Page Not Available</h1></header></center></div>
+    </div>
+    <style>
+        .eventsheader{
+        background-image:url('photos/StudentsForUnityLogo\ 2.png');
+        background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 200%;
+      margin-left: -1%;
+      margin-right: -1%;
+      margin-top: -4%;
+      margin-bottom: -2%;
+      padding-top: 10%;
+      background-color:rgba(160, 190, 220, 0.75);
+        }
+        .eventsheaderwords{
+            opacity: 1;
+        }
+    </style>
+    </html>
