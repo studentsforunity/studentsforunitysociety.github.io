@@ -1,0 +1,22 @@
+SFU MOBILE 
+- Menu bar
+    - need a drop down menu
+    - left side
+- Home 
+    - need to make the image size smaller 
+    - still implement parallaz scrolling
+    - Change text size
+    - for news button, need to fix the size of each news panel and change the format
+- Events
+    - for the format, just change it to swiping
+    - scale 
+    - change the size of picture
+- Meetings 
+    - for the format, just change it to swiping
+    - scale the meeting panels
+    - change size of picture
+- Contact
+    - change the size of the pic
+    - scale the contact boxes
+- About Us
+    - rescale everything
