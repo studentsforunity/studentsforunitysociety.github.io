@@ -130,6 +130,38 @@
     <center><body>
         <center>
     <div class = "yearsofmeetings">
+        <div class="the2324year">
+            <button type="button" class="collapsible2" style = "font-size: 20px;"><h2>2023-24 Year</h2></button>
+            <div class="stuff2"> 
+            <center><div class="grid2324">
+            <div article = the2324start>
+                <h3>September 15 2023</h3>
+                <h4>Students For Unity Introduction</h4>
+
+
+
+                <div class = "the2324yearDesc">
+                    <body>
+                        First Meeting of the 2023-24 Year! We introduced Students For Unity to all the new students, discussed what we wanted to achieve this year, and talked about BASIS diversity!
+                    </body>
+                </div>
+            </div>
+            </div>
+        </center>
+        </div>
+        </div>
+     
+                    
+<style>
+        .grid2324{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        }
+        
+
+
+</style>
+                    
     <div class="the2223year">
     
         <button type="button" class="collapsible" style = "font-size: 20px;"><h2>2022-23 Year</h2></button>
@@ -139,17 +171,26 @@
                     <h3>April 28 2023</h3>
                     <h4>End Of The Year Potluck!</h4>
                     <div class = PicCarouselend2223>
-                        <!--<div class = end2223>
-                        <img src = "photos/endOftheYear1.jpeg" width="450" height="350" >
-                    </div>-->
-                
-                        <div class = end2223>
-                        
-                        <a href="zmedia/end2223.html"><img src = "photos/endOftheYear2.jpg " width="350" height="300"></a>
+                        <div class = "overlay" id = "end22_23" style = "display: none;">
+                        <span class="closebtn" onclick="closeOverlay('end22_23')">&times;</span>
+                        <div class = end2223_image1>
+
+                        <img src = "photos/endOftheYear1.jpeg" width = "1286" height = "471.03">
+
+                    </div>
+                    <style>
+                        .end2223_image1{
+                            position: absolute;
+                            padding: 40px;
+                        }
+                    </style>
+                    <div class = end2223>
+
+                       <img src = "photos/endOftheYear2.jpg ">
                         
                     </div>
-                
-                        <!--<div class = end2223>
+
+                    <div class = end2223>
                         
                         <video src = "videos/endOftheYear3.mov" controls width="350" height="300"></video>
                         
@@ -168,8 +209,15 @@
                 
                     </div>
                     <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>-->
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                
                     </div>
+                    </div>
+                    <div class = end22_23 style = "cursor: pointer;" onclick="openOverlay('end22_23')">
+                    
+                        <img src = "photos/endOftheYear2.jpg " width="350" height="300">
+                         
+                     </div>
                     <div class = "endofYeardesc">
                     <body>
                         This was our last meeting of the 2022-23 year! Along with holding a potluck of eegees, chips, and various Asian snacks, we had fun with some karaoke! Thank you to everyone for the amazing year! 
@@ -624,36 +672,45 @@
                 }
                 </style>
                 
-    </div>
+    </div> </center>
     </div>
 </div>
     <div class="the2122year">
     
         <button type="button" class="collapsible1" style = "font-size: 20px;"><h2>2021-22 Year</h2></button>
-        <div class="stuff"> 
+        <div class="stuff1"> 
         <center><div class="grid2122">
                 <div class = end22 style = "color: white;">
 
                     <h3>May 13 2022</h3>
                     <h4>End of the Year Potluck</h4>
+                    <div class = "overlay" id = "end21_22" style = "display: none;">
+                    <span class="closebtn" onclick="closeOverlay('end21_22')">&times;</span>
                     <div class= PicCarousel>
                 
                         <!-- Full-width images with number and caption text -->
-                        <div class = "end2122">
+                        <div class = "theend2122">
                           
-                          <img src="photos/endofyear2122pt2.jpeg" width="350" height="300" >
+                          <img src="photos/endofyear2122pt2.jpeg" width = "1243.71" height="800">
                           
                         </div>
                       
-                        <!--<div class="end2122">
+                        <div class="theend2122">
                         
-                          <img src="photos/endofyear2122.jpeg" width="350" height="300">
+                          <img src="photos/endofyear2122.jpeg" width = "1243.71" height="800">
                           
                 
                         </div>
+                    </div>
+
                     <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>-->
+                    <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
                 </div>
+                <div class = end21_22 style = "cursor: pointer;" onclick="openOverlay('end21_22')">
+                          
+                    <img src="photos/endofyear2122pt2.jpeg" width="350" height="300" >
+                    
+                  </div>
                 <div class = end2122caption style = "color: white;">
                     <body>The last meeting of the 2021-22 year! We hosted a potluck of various snacks along with discussing the Cultural Bakesale and upcoming plans for the 2022-23 year! Thank you to everyone who has supported the club!</body>
                 </div>
@@ -682,7 +739,7 @@
                 </div></center>
                 </div>
                 </div>
-                
+   </div>             
 
 
 <style>
@@ -715,13 +772,21 @@
             color: #ffffff;
             font-family: nunito;
            
+           
         }
-        /*.stuff1{
+        .stuff1{
             background-color: #353f49;
             color: #ffffff;
             font-family: nunito;
-            margin-bottom: -2%;
-        }*/
+            margin-top: -2%;
+        }
+
+        .stuff2{
+            margin-top: -5%;
+            background-color: #353f49;
+            color: #ffffff;
+            font-family: nunito;
+        }
 
       .collapsible {
         cursor: pointer;
@@ -769,6 +834,28 @@
         margin-bottom: 2%;
     }
 
+    .collapsible2{
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: center;
+        outline: none;
+        border-bottom: 40%;
+        border-top:  40%;
+        border-color: #66798c;
+        color: #353f49;
+        transition: 0.4s;
+        background-color: #a0bedc;
+        color: white;
+        margin-top: 2%;
+        margin-bottom: 9%;
+
+    }
+
+    .active, .collapsible2:hover{
+        background-color:#829bb4;
+    }
+
     .active, .collapsible:hover {
         background-color: #829bb4;
     }
@@ -794,6 +881,13 @@
         text-align: center;
         display:none;
     }
+    .stuff2{
+        padding: 0 18px;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        text-align: center;
+        display:none;
+    }
     .grid2122{
         display: grid;
       grid-template-columns: auto auto;
@@ -811,10 +905,48 @@
 
     }
 
+    .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 2;
+        }
+    .overlay iframe {
+        border-radius: 12px;
+        width: 80%;
+        height: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size:60px;
+        color: white;
+        cursor: inter;
+
+    }
+
     </style>
+    <script>
+function openOverlay(overlayId) {
+  document.getElementById(overlayId).style.display = "block";
+}
+
+function closeOverlay(overlayId) {
+    document.getElementById(overlayId).style.display= "none";
+    }
+    </script>
         <script>
             let slideIndex = [1,1,1,1,1,1];
-            let slideId = ["end2223","intF", "BSU", "irann", "basisdiv", "end2122"]
+            let slideId = ["end2223","intF", "BSU", "irann", "basisdiv", "theend2122"]
             showSlides(1, 0);
             showSlides(1, 1);
             showSlides(1, 2);
@@ -875,10 +1007,35 @@
       });
     }
     </script>
+
+<script>
+
+
+    var coll = document.getElementsByClassName("collapsible2");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+    </div>
+    </div>
+    </center>
     </body>
+
+</center>
 </center>
 </div>
 </div>
+
 </html>
 <!--
     MLK march

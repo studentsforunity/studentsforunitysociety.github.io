@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <title>Students For Unity Home Page</title>
     <nav>
-        <div class="topnav">
+        <div class="desktopmenu">
            
             <div class = "textwoo">
             <!--<div class = "aboutSFU">
@@ -23,11 +23,70 @@
             <a href="sfuhomepage.html">Home</a>
         </div>
          
-    
+        <div class = "mobilemenu">
+            <div id = "mblinks">
+            <a href="sfuaboutus.html">About Us</a>
+            <a href="sfucontactus.html">Contact</a>
+            <a href ="sfueventspage.html">Events</a>
+            <a href="sfumeetingspage.html">Meetings</a>
+            <a href="sfuhomepage.html">Home</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <button style="font-size:24px"><i class="fa fa-bars"></i></button>
+              </a>
+        </div>
     </nav>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("mblinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+        
     <style>
+        /* Media query for screens larger than 768px (desktop) */
+@media (min-width: 769px) {
+    .desktopmenu {
+        display: block;
+    }
+    .mobilemenu {
+        display: none;
+    }
+}
 
-        .topnav {
+/* Media query for screens 768px and smaller (mobile) */
+@media (max-width: 768px) {
+    .desktopmenu {
+        display: none;
+    }
+    .mobilemenu {
+        display: block;
+    }
+}
+
+    </style>
+    <style>
+        .mobilemenu a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+        .mobilemenu{
+
+        }
+
+        .mobilemenu #mblinks{
+            
+        }
+
+        .desktopmenu {
             margin-top: 5.5%;
             top: 0;
             left: 0;
@@ -46,7 +105,7 @@
             text-decoration:none;
             opacity: 100%;
         }
-        .topnav  a:hover {
+        .desktopmenu  a:hover {
         color: black; 
 }
     
@@ -190,9 +249,19 @@
     </body></center>
 </div>
 </div>
+<div class = "extraspace"></div>
 </div>
 </div>
 <style>
+    .extraspace{
+        margin-top: 3%;
+        background-color: #829bb4;
+        border-bottom:  40%;
+        border-top:  40%;
+        padding: 40px;
+        width: 97%;
+        margin-left: -2%;
+    }
     .langsurveycontent{
         margin-top: 14%;
     }
@@ -206,19 +275,55 @@
 </style>
     <div class = "meetings" style="color: white; font-weight: bold;">
 <center><h1><strong>Meetings</strong></h1>
-    <body>
+    <div class = "meetingpicture">
+        <img src = "photos/intro_discussion.jpg" width="500" height="375">
+    </div>
+    <div class = "meetingpicture">
+        <img src = "photos/intro_board.jpg" width="500" height="375">
+    </div>
+    <div class = "meetingpicture">
+        <img src = "photos/intro_groupPic.jpg" width="500" height="375">
+    </div>
+    <div class = "meetingdesc">
+        <body>
+        Second Meeting of the 2023-24 Year! We discussed logistical things with our upcoming events and talked about homelessness! Check out more in the <a href=sfumeetingspage.html> meeting archive page </a>!
+        </body>
+    </div>
+    <!--<body>
         Our school meetings are currently done for the year! However, we have a <a href=sfumeetingspage.html> meeting archive page </a> where you'll see all our meetings for each year! Stay tuned for the 2023-24 meetings!
-    </body>
+    </body>-->
 
 </div></center>
 
+<style>
+    .meetings{
+        margin-top: 4%;
+    }
+    .meetingpicture{
+       margin-left: -50%;
+    }
+    .meetingdesc{
+        font-size: 23px;
+        padding-right: 15%;
+        padding-left: 15%;
+        margin-top: -17.5%;
+        text-align: justify;
+        margin-left: 30%;
+    }
+</style>
+
 <center><div class = "events" style="color: white; font-weight: bold;">
     <h1><strong>Events</strong></h1>
+    
+<div class = "eventdesc">
     <body>
         There have been no recent events we have attended, but you can see us in these <a href=sfueventspage.html> events </a> 
-     from previous years 
+     from previous years! 
     </body>
+    </div>
+    <div class = "eventpicture"></div>
 </div>
+
     <body>
     </center>   
     </body>
@@ -227,8 +332,55 @@
     body{
         background-color: #353f49;
     }
+    .eventdesc{
+        margin-top: 4%;
+        font-size: 23px;
+    }
 </style>
+<script>
+var slideIds = ["meetingpicture", "eventpicture"];
+var slideIndexes = [0, 0];
+
+for (var i = 0; i < slideIds.length; i++) {
+  showSlides(1, i);
+  carousel(2000, i);
+}
+
+function carousel(interval, slideIndex) {
+  var slides = document.getElementsByClassName(slideIds[slideIndex]);
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndexes[slideIndex]++;
+  if (slideIndexes[slideIndex] > slides.length) {
+    slideIndexes[slideIndex] = 1;
+  }
+  slides[slideIndexes[slideIndex] - 1].style.display = "block";
+  setTimeout(function() {
+    carousel(interval, slideIndex);
+  }, interval);
+}
+
+function showSlides(n, slideIndex) {
+  var slides = document.getElementsByClassName(slideIds[slideIndex]);
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndexes[slideIndex] += n;
+  if (slideIndexes[slideIndex] > slides.length) {
+    slideIndexes[slideIndex] = 1;
+  }
+  if (slideIndexes[slideIndex] < 1) {
+    slideIndexes[slideIndex] = slides.length;
+  }
+  slides[slideIndexes[slideIndex] - 1].style.display = "block";
+}
+    </script>
 <style>
+    .events{
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
     .homeheaderwords{
         font-family: "nunito";
         color:white;
