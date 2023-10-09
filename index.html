@@ -20,7 +20,7 @@
             <a href="sfucontactus.html">Contact</a>
             <a href ="sfueventspage.html">Events</a>
             <a href="sfumeetingspage.html">Meetings</a>
-            <a href="sfuhomepage.html">Home</a>
+            <a href="index.html">Home</a>
         </div>
          
         <div class = "mobilemenu">
@@ -29,7 +29,7 @@
             <a href="sfucontactus.html">Contact</a>
             <a href ="sfueventspage.html">Events</a>
             <a href="sfumeetingspage.html">Meetings</a>
-            <a href="sfuhomepage.html">Home</a>
+            <a href="index.html">Home</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <button style="font-size:24px"><i class="fa fa-bars"></i></button>
@@ -79,6 +79,7 @@
 }
 
         .mobilemenu{
+            color: #a0bedc;
 
         }
 
@@ -173,13 +174,13 @@
       ;
     });
     </script>-->
-    <div class = "homeheader">
-        <div class = "homeheaderwords">
+    <div class = "homeheader_desktop">
+        <div class = "homeheaderwords_desktop">
     <center><header><h1  style="font-size:650%; padding-bottom: 30%; padding-top: 10%;" ><div id="title">Students for Unity</div></h1><p><h2 style="margin-top: -35%;">Promoting Activism and Civil Discussion</h2></p></header></center>
 </div>
 </div>
     <style>
-            .homeheader {
+            .homeheader_desktop {
     background-image:url('photos/homepagebg.JPG');
     background-attachment: fixed;
   background-position: center;
@@ -192,21 +193,75 @@
   margin-bottom: 10%;
   padding-top: 10%;
   padding-bottom: 30%;
+  font-family: nunito;
+  color: white;
+    }
+
+    @media (min-width: 769px) {
+    .homeheader_desktop {
+        display: block;
+    }
+    .homeheader_mobile{
+        display: none;
+    }
+}
+
+/* Media query for screens 768px and smaller (mobile) */
+@media (max-width: 768px) {
+    .homeheader_desktop {
+        display: none;
+    }
+    .homeheader_mobile {
+        display: block;
+    }
+}
+
+
+
+    </style>
+    <div class = "homeheader_mobile">
+        <div class = "homeheaderwords_mobile">
+    <center><header><h1  style="font-size:450%; padding-bottom: 30%; padding-top: 10%;" ><div id="title">Students for Unity</div></h1><div id = "subtitle"><p><h2 style="margin-top: -35%;">Promoting Activism and Civil Discussion</h2></p></div></header></center>
+</div>
+</div>
+    <style>
+        .homeheader_mobile #title {
+    font-family: nunito;
+  color: white;
+        }
+        .homeheader_mobile #subtitle{
+    font-family: nunito;
+  color: white;
+        }
+        .homeheader_mobile {
+    background-image:url('photos/homepage.jpg');
+    background-attachment:fixed;
+  background-position:fixed;
+  background-repeat: no-repeat;
+  background-size: 140%;
+  min-height: 200%;
+  margin-left: -2%;
+  margin-right: -2.05%;
+  margin-top: -20.5%;
+  margin-bottom: 10%;
+  padding-top: 10%;
+  padding-bottom: 30%;
+
     }
 
 
 
     </style>
 
-<div class = "content">
-<div class="aboutUsshort">
+<div class = "content_desktop">
+<div class="aboutUsshort_desktop">
 <center><body>
         We are a social justice club based on BASIS Tucson North. <p>Join our meetings every Friday from 4-5pm!</p>
           
     </body></center></div>
 
 <style>
-    .aboutUsshort{
+    .aboutUsshort_desktop{
         font-family: 'nunito';
         font-size: 200%;
         padding-left: 15px;
@@ -239,7 +294,7 @@
 <div class = "langsurvey">
     <center><h1 style="color: white;">Language Survey</h1>
     <body>
-        <div class = "langsurveycontent">
+        <div class = "langsurveycontent_desktop">
         <center><iframe width = 446 height = 531.333
         src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTmPskbVeh8tS2CsWnev067HowAVqKygBTNAd2QfAGcw7DO7_5Imb5_o_RwMzsFzAVtVvbSHX-G6gdX/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" >
     </iframe></center>
@@ -262,7 +317,7 @@
         width: 97%;
         margin-left: -2%;
     }
-    .langsurveycontent{
+    .langsurveycontent_desktop{
         margin-top: 14%;
     }
     .langsurveywords{
@@ -392,7 +447,7 @@ function showSlides(n, slideIndex) {
         font-family: "nunito";
         color: white;
     }
-    .content{
+    .content_desktop{
         margin-top: -10%;
     }
     .collapsible {
