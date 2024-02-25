@@ -1,533 +1,130 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        </head>
-    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <title>Students For Unity Home Page</title>
-    <nav>
-        <div class="desktopmenu">
-           
-            <div class = "textwoo">
-            <!--<div class = "aboutSFU">
-                <button class = "aboutSFUU" onclick="buttonFunction()"><a href="sfuaboutus.html">About Us</a></button> 
-                    <div class = "dropdownAboutUs" id="aboutSFUdropdown">
-                    <a href = "sfuleadership.html">Leadership</a>    
-        </div>
-            </div>-->
-            <a href="sfuaboutus.html">About Us</a>
-            <a href="sfucontactus.html">Contact</a>
-            <a href ="sfueventspage.html">Events</a>
-            <a href="sfumeetingspage.html">Meetings</a>
-            <a href="index.html">Home</a>
-        </div>
-         
-        <div class = "mobilemenu">
-            <div id = "mblinks">
-            <a href="sfuaboutus.html">About Us</a>
-            <a href="sfucontactus.html">Contact</a>
-            <a href ="sfueventspage.html">Events</a>
-            <a href="sfumeetingspage.html">Meetings</a>
-            <a href="index.html">Home</a>
+    <html>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            </head>
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+        <nav>
+            <div class="topnav">
+               
+                <div class = "textwoo">
+                <!--<div class = "aboutSFU">
+                    <button class = "aboutSFUU" onclick="buttonFunction()"><a href="sfuaboutus.html">About Us</a></button> 
+                        <div class = "dropdownAboutUs" id="aboutSFUdropdown">
+                        <a href = "sfuleadership.html">Leadership</a>    
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <button style="font-size:24px"><i class="fa fa-bars"></i></button>
-              </a>
-        </div>
-    </nav>
-    <script>
-        function myFunction() {
-          var x = document.getElementById("mblinks");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-        </script>
+                </div>-->
+                <a href="sfuaboutus.html">About Us</a>
+                <a href="sfucontactus.html">Contact</a>
+                <a href ="sfueventspage.html">Events</a>
+                <a href="sfumeetingspage.html">Meetings</a>
+                <a href="index.html">Home</a>
+            </div>
+             
         
-    <style>
-        /* Media query for screens larger than 768px (desktop) */
-@media (min-width: 769px) {
-    .desktopmenu {
-        display: block;
-    }
-    .mobilemenu {
-        display: none;
-    }
-}
-
-/* Media query for screens 768px and smaller (mobile) */
-@media (max-width: 768px) {
-    .desktopmenu {
-        display: none;
-    }
-    .mobilemenu {
-        display: block;
-    }
-}
-
-    </style>
-    <style>
-        .mobilemenu a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-        .mobilemenu{
-            color: #a0bedc;
-
-        }
-
-        .mobilemenu #mblinks{
-            
-        }
-
-        .desktopmenu {
-            margin-top: 5.5%;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color:none;
-            font-family: 'Nunito';
-            
-        }
+        </nav>
+        <style>
     
-        .textwoo a {
-            float: right;
-            font-size: 15px;
-            color: white;
-            text-align: center;
-            padding: 40px 21px;
-            text-decoration:none;
-            opacity: 100%;
-        }
-        .desktopmenu  a:hover {
-        color: black; 
-}
-    
-        .aboutSFU {
-            float: right;
-            overflow: hidden;
-        }
-    
-        .aboutSFU .aboutSFUU {
-            cursor: pointer;
-            font-size: 18px;
-            border:none;
-            outline: none;
-            color: white;
-            background-color: inherit;
-            font-family: inherit;
-            margin: 0;
-        }
-    
-        .dropdownAboutUs {
-            display: none;
-            position: absolute;
-            background-color: #ffffff;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-    
-        .dropdownAboutUs a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-    
-        .show {
-            display: block;
-        }
-        .dropdownAboutUs a:hover {background-color: none;}
-
-.aboutSFU:hover .dropdownAboutUs {display: block;}
-    </style>
-    <script>
-    
-        function buttonFunction() {
-          document.getElementById("aboutSFUdropdown").classList.toggle("show");
-        }
-        
-    
-        window.onclick = function(e) {
-          if (!e.target.matches('.aboutSFUU')) {
-          var myDropdown = document.getElementById("aboutSFUdropdown");
-            if (myDropdown.classList.contains('show')) {
-              myDropdown.classList.remove('show');
+            .topnav {
+                margin-top: 3%;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color:none;
+                font-family: 'Nunito';
+                
             }
-          }
-        }
-        </script>
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-        $("#title").fadeIn();
-      ;
-    });
-    </script>-->
-    <div class = "homeheader_desktop">
-        <div class = "homeheaderwords_desktop">
-    <center><header><h1  style="font-size:650%; padding-bottom: 30%; padding-top: 10%;" ><div id="title">Students for Unity</div></h1><p><h2 style="margin-top: -35%;">Promoting Activism and Civil Discussion</h2></p></header></center>
-</div>
-</div>
-    <style>
-            .homeheader_desktop {
-    background-image:url('photos/homepagebg.JPG');
-    background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 200%;
-  margin-left: -1%;
-  margin-right: -1%;
-  margin-top: -6.5%;
-  margin-bottom: 10%;
-  padding-top: 10%;
-  padding-bottom: 30%;
-  font-family: nunito;
-  color: white;
+        
+            .textwoo a {
+                float: right;
+                font-size: 15px;
+                color: white;
+                text-align: center;
+                padding: 40px 21px;
+                text-decoration:none;
+                opacity: 100%;
+            }
+            .topnav  a:hover {
+            color: black; 
     }
-
-    @media (min-width: 769px) {
-    .homeheader_desktop {
-        display: block;
-    }
-    .homeheader_mobile{
-        display: none;
-    }
-}
-
-/* Media query for screens 768px and smaller (mobile) */
-@media (max-width: 768px) {
-    .homeheader_desktop {
-        display: none;
-    }
-    .homeheader_mobile {
-        display: block;
-    }
-}
-
-
-
-    </style>
-    <div class = "homeheader_mobile">
-        <div class = "homeheaderwords_mobile">
-    <center><header><h1  style="font-size:450%; padding-bottom: 30%; padding-top: 10%;" ><div id="title">Students for Unity</div></h1><div id = "subtitle"><p><h2 style="margin-top: -35%;">Promoting Activism and Civil Discussion</h2></p></div></header></center>
-</div>
-</div>
-    <style>
-        .homeheader_mobile #title {
-    font-family: nunito;
-  color: white;
-        }
-        .homeheader_mobile #subtitle{
-    font-family: nunito;
-  color: white;
-        }
-        .homeheader_mobile {
-    background-image:url('photos/homepage.jpg');
-    background-attachment:fixed;
-  background-position:fixed;
-  background-repeat: no-repeat;
-  background-size: 140%;
-  min-height: 200%;
-  margin-left: -2%;
-  margin-right: -2.05%;
-  margin-top: -20.5%;
-  margin-bottom: 10%;
-  padding-top: 10%;
-  padding-bottom: 30%;
-
-    }
-
-
-
-    </style>
-
-<div class = "content_desktop">
-<div class="aboutUsshort_desktop">
-<center><body>
-        We are a social justice club based on BASIS Tucson North. <p>Join our meetings every Friday from 4-5pm!</p>
-          
-    </body></center></div>
-
-<style>
-    .aboutUsshort_desktop{
-        font-family: 'nunito';
-        font-size: 200%;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 25px;
-        padding-bottom: 5px;
-    }
-</style>
-<div class = "homenews">
-<button type = "button" class = "collapsible" style="font-size: 20px; font-weight: bold;"><h2><strong>News</strong></h2></button>
-<div class = "thehomenews">
-    <div class = "girdhome">
-    <div class = "TJ">
-    <center><h1 style="color: white;">New Leadership!</h1>
-        <h3 style="color: white;">Anthony</h3>
-        <img src = "photos/TJintroHome.jpeg" width = 450 height= 531.333>
-        <div class ="tjleadership"><body><p><q>As a member of SFU since its founding, I am committed to its values of diversity, discussion, and debate. As a member of leadership of Students for Unity, I will endeavor to bolster the ideological diversity and community service obligations of SFU.  I will seek to incorporate new perspectives in meetings  and deliver positive change in our community through beautification projects, civic engagement opportunities, etc.</q></p></body> 
-        </div></div>
-</center>
-<style>
-
-    .tjleadership{
-        text-align: justify;
-        margin-left: 1.5%;
-        margin-right: 1.5%;
-        color: white;
-
-    }
-</style>
-<div class = "langsurvey">
-    <center><h1 style="color: white;">Language Survey</h1>
-    <body>
-        <div class = "langsurveycontent_desktop">
-        <center><iframe width = 446 height = 531.333
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTmPskbVeh8tS2CsWnev067HowAVqKygBTNAd2QfAGcw7DO7_5Imb5_o_RwMzsFzAVtVvbSHX-G6gdX/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" >
-    </iframe></center>
-    <div class="langsurveywords" ><p>Due to the racial and ethnic diversity in BASIS Tucson North, we surveyed the school to explore the linguistic diversity along with the nuances of each langauge group.</p></div>
-    <p><a href="https://docs.google.com/document/d/1t2_F9Zvee1e4nhFw4lwI0_Ew6IOaJCGf-UrMBaoeixM/edit?usp=sharing">Read More Information Here</a></p>
-    </div>
-    </body></center>
-</div>
-</div>
-<div class = "extraspace"></div>
-</div>
-</div>
-<style>
-    .extraspace{
-        margin-top: 3%;
-        background-color: #829bb4;
-        border-bottom:  40%;
-        border-top:  40%;
-        padding: 40px;
-        width: 97%;
-        margin-left: -2%;
-    }
-    .langsurveycontent_desktop{
-        margin-top: 14%;
-    }
-    .langsurveywords{
-        text-align:justify;
-        margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 7%;
-  color: #ffffff;
-    }
-</style>
-    <div class = "meetings" style="color: white; font-weight: bold;">
-<center><h1><strong>Meetings</strong></h1>
-    <div class = "meetingpicture">
-        <img src = "photos/edudispar.jpg" width="500" height="375">
-    </div>
-    <div class = "meetingpicture">
-        <img src = "photos/edudispar1.jpg" width="500" height="375">
-    </div>
-    <div class = "meetingpicture">
-        <img src = "photos/edudispar2.jpg" width="500" height="375">
-    </div>
-    <div class = "meetingpicture">
-        <img src = "photos/edudispar3.jpg" width="500" height="375">
-    </div>
-    <div class = "meetingdesc">
-        <body>
-        We held group discussions regarding educational disparities in Tucson. Check out more in the <a href=sfumeetingspage.html> meeting archive page </a>!
-        </body>
-    </div>
-    <!--<body>
-        Our school meetings are currently done for the year! However, we have a <a href=sfumeetingspage.html> meeting archive page </a> where you'll see all our meetings for each year! Stay tuned for the 2023-24 meetings!
-    </body>-->
-
-</div></center>
-
-<style>
-    .meetings{
-        margin-top: 4%;
-    }
-    .meetingpicture{
-       margin-left: -50%;
-    }
-    .meetingdesc{
-        font-size: 23px;
-        padding-right: 15%;
-        padding-left: 15%;
-        margin-top: -17.5%;
-        text-align: justify;
-        margin-left: 30%;
-    }
-</style>
-
-<center><div class = "events" style="color: white; font-weight: bold;">
-    <h1><strong>Events</strong></h1>
+        
+            .aboutSFU {
+                float: right;
+                overflow: hidden;
+            }
+        
+            .aboutSFU .aboutSFUU {
+                cursor: pointer;
+                font-size: 18px;
+                border:#353f49;
+                outline: none;
+                color: white;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+        
+            .dropdownAboutUs {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+        
+            .dropdownAboutUs a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+        
+            .show {
+                display: block;
+            }
+            .dropdownAboutUs a:hover {background-color: none;}
     
-<div class = "eventdesc">
-    <body>
-        There have been no recent events we have attended, but you can see us in these <a href=sfueventspage.html> events </a> 
-     from previous years! 
-    </body>
+    .aboutSFU:hover .dropdownAboutUs {display: block;}
+        </style>
+        <script>
+        
+            function buttonFunction() {
+              document.getElementById("aboutSFUdropdown").classList.toggle("show");
+            }
+            
+        
+            window.onclick = function(e) {
+              if (!e.target.matches('.aboutSFUU')) {
+              var myDropdown = document.getElementById("aboutSFUdropdown");
+                if (myDropdown.classList.contains('show')) {
+                  myDropdown.classList.remove('show');
+                }
+              }
+            }
+            </script>
+      <div class = "eventsheader">
+        <div class = "eventsheaderwords">  
+    <center><header><h1  style="font-size:850%; font-family:nunito; color: rgb(255, 255, 255); text-align: center; margin-top: 15%;">Page Not Available</h1></header></center></div>
     </div>
-    <div class = "eventpicture"></div>
-</div>
-
-    <body>
-    </center>   
-    </body>
-    </div>
-<style>
-    body{
-        background-color: #353f49;
-    }
-    .eventdesc{
-        margin-top: 4%;
-        font-size: 23px;
-    }
-</style>
-<script>
-var slideIds = ["meetingpicture", "eventpicture"];
-var slideIndexes = [0, 0];
-
-for (var i = 0; i < slideIds.length; i++) {
-  showSlides(1, i);
-  carousel(2000, i);
-}
-
-function carousel(interval, slideIndex) {
-  var slides = document.getElementsByClassName(slideIds[slideIndex]);
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndexes[slideIndex]++;
-  if (slideIndexes[slideIndex] > slides.length) {
-    slideIndexes[slideIndex] = 1;
-  }
-  slides[slideIndexes[slideIndex] - 1].style.display = "block";
-  setTimeout(function() {
-    carousel(interval, slideIndex);
-  }, interval);
-}
-
-function showSlides(n, slideIndex) {
-  var slides = document.getElementsByClassName(slideIds[slideIndex]);
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndexes[slideIndex] += n;
-  if (slideIndexes[slideIndex] > slides.length) {
-    slideIndexes[slideIndex] = 1;
-  }
-  if (slideIndexes[slideIndex] < 1) {
-    slideIndexes[slideIndex] = slides.length;
-  }
-  slides[slideIndexes[slideIndex] - 1].style.display = "block";
-}
-    </script>
-<style>
-    .events{
-        margin-top: 15%;
-        margin-bottom: 5%;
-    }
-    .homeheaderwords{
-        font-family: "nunito";
-        color:white;
-    }
-    .aboutUsshort{
-        font-family: "nunito";
-        color: white;
-    }
-    .content_desktop{
-        margin-top: -10%;
-    }
-    .collapsible {
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        text-align: center;
-        outline: none;
-        border-bottom:  40%;
-        border-top:  40%;
-        border-color: #66798c;
-        color: #353f49;
-        transition: 0.4s;
-        background-color: #a0bedc;
-        color: white;
-        margin-top: 0.5%;
-        font-family: nunito;
-    }
-
-  .active, .collapsible:hover {
-      background-color: #829bb4;
-  }
-
-  .stuff {
-      padding: 0 18px;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-  }
-
-  .girdhome{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-
-    .TJ{
-        background-color: #829bb4;
-        width: 450px;
-        margin-top: 10px;
-        margin-left:120px;        
-        border-bottom:  40%;
-        border-top:  40%;
-        border-color: #66798c;
-    }
-    .langsurvey{
-        background-color: #829bb4;
-        width: 450px;
-        margin-top:10px;
-        margin-left: 50px;
-        border-bottom:  40%;
-        border-top:  40%;
-        border-color: #66798c;
-    }
-    .homenews{
-        font-family: 'Nunito';
-    }
-    .thehomenews{
-        display: none;
-    }
-    .meetings{
-        font-family: 'Nunito'
-    }
-    .events {
-        font-family: 'Nunito'
-    }
-      </style>
-<script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
+    <style>
+        .eventsheader{
+        background-image:url('photos/StudentsForUnityLogo\ 2.png');
+        background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 200%;
+      margin-left: -1%;
+      margin-right: -1%;
+      margin-top: -4%;
+      margin-bottom: -2%;
+      padding-top: 10%;
+      background-color:rgba(160, 190, 220, 0.75);
         }
-      });
-    }
-    </script>
-</html> 
+        .eventsheaderwords{
+            opacity: 1;
+        }
+    </style>
+    </html>
